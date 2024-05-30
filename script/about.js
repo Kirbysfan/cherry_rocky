@@ -3,7 +3,7 @@ let siteLang = $("html").attr("lang");
 
 function getData(lang, id) {
     $.ajax({
-        url: `../${lang}/about.json`, success: function (result) {
+        url: `${lang}/about.json`, success: function (result) {
             //result = JSON.parse(result);
             //console.log(result);
             let target = result.rocky_switch_vanilla;

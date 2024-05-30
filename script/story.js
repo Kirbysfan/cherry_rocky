@@ -11,7 +11,7 @@ function getStory(lang) {
         s_id = params.get('id');
     }
     $.ajax({
-        url: `../${lang}/stories.json`, success: function (result) {
+        url: `${lang}/stories.json`, success: function (result) {
             let target_story = 0;
             const stories = result;
             $(".total_story").html(Object.keys(stories).length);

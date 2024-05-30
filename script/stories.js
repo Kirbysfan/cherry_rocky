@@ -2,7 +2,7 @@ import * as action from './universal.js';
 let siteLang = $("html").attr("lang");
 function getStories(lang) {
     $.ajax({
-        url: `../${lang}/stories.json`, success: function (result) {
+        url: `${lang}/stories.json`, success: function (result) {
             console.log(result);
             $(".stories_count").html(Object.keys(result).length)
             console.log(Object.keys(result).length);
