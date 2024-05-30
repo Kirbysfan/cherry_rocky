@@ -1,0 +1,12 @@
+.main {
+    background-color: var(--main_bg_color);
+}
+
+.story_chapter>a {
+    text-decoration: none;
+    color: white;
+}
+
+.story_chapter>a:hover .option_hoshi {
+    transform: rotate(360deg);
+}

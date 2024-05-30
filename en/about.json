@@ -1,0 +1,41 @@
+{
+    "rocky_switch_vanilla":
+    {
+        "rocky_pfp": "rocky_about_vanilla.png",
+        "rocky_name": "Rocky",
+        "rocky_gender": "♂",
+        "rocky_liveplace": "Meow Kingdom",
+        "rocky_race": "Meow",
+        "rocky_favfood": "Meow chocolate cookie.",
+        "rocky_hobby": "Learn to code. Play BMS. Make sth funny.<br>And... Make myself cuter!<br><span>(I might crossdress sometimes! 0w<)</span>",
+        "rocky_favcolor": "Sky blue, white, black, pink, red ",
+        "rocky_occupation": "Software engineer",
+        "rocky_msg": "Nice to meet you all!"
+    },
+    "rocky_switch_cherry":
+    {
+        "rocky_pfp": "rocky_about_cherry.png",
+        "rocky_name": "Rocky",
+        "rocky_gender": "♂...?",
+        "rocky_liveplace": "Sakura Village",
+        "rocky_race": "Meow",
+        "rocky_favfood": "Meow chocolate cookie, and things made with cherry.",
+        "rocky_hobby": "Learn to code. Play BMS. Make sth funny.<br>And... Make myself cuter!<br><span>(I might crossdress sometimes! 0w<)</span>",
+        "rocky_favcolor": "Sky blue, white, black, pink, red ",
+        "rocky_occupation": "The Cherry Magician <br> Software engineer",
+        "rocky_msg": "Nice to meet you all!"
+    },
+    "rocky_switch_current":
+    {
+        "rocky_pfp": "rocky_about_current.png",
+        "rocky_name": "Rocky",
+        "rocky_gender": "♂...?",
+        "rocky_liveplace": "Sakura Village",
+        "rocky_race": "Meow",
+        "rocky_favfood": "Meow chocolate cookie, and things made with cherry.",
+        "rocky_hobby": "Learn to code and be cute~",
+        "rocky_favcolor": "Pink, sky blue, white, red, black ",
+        "rocky_occupation": "Student in the Meow Devildom Kindergarten<br>The cherry magician<br>Software engineer",
+        "rocky_msg": "Rocky will be here, keep being cute, trying my best to keep having good days with everyone!~"
+    }
+}

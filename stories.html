@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories - DNAxCAT Rocky's Personal Website</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--CSS file specially for current page-->
+    <link rel="stylesheet" href="style/stories.css">
+    <!--Material Symbols-->
+    <link rel="stylesheet" href="node_modules/material-symbols/index.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!--Universal skin CSS file-->
+    <link rel="stylesheet" href="style/main.css">
+    <!--Website logo to be shown before title-->
+    <link rel="shortcut icon" href="icon/hoshi.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!--Loading screen, will disappear once every script is loaded.-->
+    <div id="load">
+        <div class="load_hoshi">
+            <img src="icon/hoshi_w.svg" alt="">
+        </div>
+    </div>
+    <!--A navbar is still necessary, handled by JQuery things-->
+    <div id="rocky_nav" role="navigation">
+    </div>
+    <div class="banner">
+        <img class=" d-none d-md-block position-relative banner_stub" src="img/stub.svg" alt="">
+        <img class=" d-block d-md-none position-relative banner_stub_mobile" src="img/stub_p.svg" alt="">
+        <div class="banner_text">
+            <div>
+                <div class="banner_h1">
+                    <img class="banner_hoshi" src="icon/hoshi_w.svg" alt="">
+                    <h1 class="mx-2">Stories</h1>
+                    <img class="banner_hoshi" src="icon/hoshi_w.svg" alt="">
+                </div>
+                <p>My story in Yah-Den Mainland!</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="main container-fluid text-white p-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <h2><span>There's a total of</span> <span class="stories_count">_</span> <span>story(ies) so
+                        far.</span></h2>
+                <div class="Stories">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                                    <div class="col-4 col-lg-12">
+                                        <img src="img/story_chapter_1_pic.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-8 d-flex justify-content-center">
+                                    <div class="col-8 col-lg-12">
+                                        <h3>Chapter 1: </h3>
+                                        <p>Rocky's story when first coming to the Yah-Den Mainland.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Chapter1" class="story_chapter row row-cols-lg-2 mx-2 mx-lg-0">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Footer, handled by pure Javascript.-->
+    <footer id="footer">
+    </footer>
+</body>
+<script>
+    const mark = "stories";
+</script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="module" src="script/stories.js"></script>
+
+</html>

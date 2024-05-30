@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me - DNAxCAT Rocky's Personal Website</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--CSS file specially for current page-->
+    <link rel="stylesheet" href="style/about.css">
+    <!--Material Symbols-->
+    <link rel="stylesheet" href="node_modules/material-symbols/index.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!--Universal skin CSS file-->
+    <link rel="stylesheet" href="style/main.css">
+    <!--Website logo to be shown before title-->
+    <link rel="shortcut icon" href="icon/hoshi.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!--Loading screen, will disappear once every script is loaded.-->
+    <div id="load">
+        <div class="load_hoshi">
+            <img src="icon/hoshi_w.svg" alt="">
+        </div>
+    </div>
+    <!--A navbar is still necessary, handled by JQuery things-->
+    <div id="rocky_nav" role="navigation">
+    </div>
+    <div class="gap"></div>
+    <div class="banner">
+        <img class=" d-none d-md-block position-relative banner_stub" src="img/stub.svg" alt="">
+        <img class=" d-block d-md-none position-relative banner_stub_mobile" src="img/stub_p.svg" alt="">
+        <div class="banner_text">
+            <div>
+                <div class="banner_h1">
+                    <img class="banner_hoshi" src="icon/hoshi_w.svg" alt="">
+                    <h1 class="mx-2">About me</h1>
+                    <img class="banner_hoshi" src="icon/hoshi_w.svg" alt="">
+                </div>
+                <p>Know more about me!</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="main container-fluid text-white p-4">
+        <!--Responsive sheet for the info of the character-->
+        <div class="text-center">
+            <p>Choose a form:</p>
+            <button class=" btn btn-outline-light" id="rocky_switch_vanilla">🌟</button>
+            <button class=" btn btn-outline-light" id="rocky_switch_cherry">🍒</button>
+            <button class=" btn btn-outline-light" id="rocky_switch_current">🍼</button>
+        </div>
+        <div class="row">
+            <div class="col-md-4 justify-content-center text-center">
+                <img src="img/rocky_about_current.png" alt="" class="about_pic m-auto rocky_pfp">
+            </div>
+            <div class="col-md-8">
+                <div class="row row-cols-md-2 text-center h-100 align-items-center">
+                    <div class=" p-4 p-md-0"><span>Name:
+                            <span class="rocky_name">Rocky</span>
+                        </span></div>
+                    <div class=" p-4 p-md-0"><span>Gender:
+                            <span class="rocky_gender">♂...?</span>
+                        </span></div>
+                    <div class=" p-4 p-md-0"><span>Liveplace:
+                            <span class="rocky_liveplace">Sakura Village</span>
+                        </span></div>
+                    <div class=" p-4 p-md-0"><span>Race:
+                            <span class="rocky_race">Meow</span></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1">
+            <div class=" p-4 text-center">
+                <span>Favourite Food:<br>
+                    <span class="rocky_favfood">Meow chocolate cookie, and things made with cherry.</span></span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Hobby:<br>
+                    <span class="rocky_hobby">Learn to code and be cute~</span>
+                </span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Favourite color:<br>
+                    <span class="rocky_favcolor">Pink, sky blue, white, red, black</span>
+                </span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Occupation:<br>
+                    <span class="rocky_occupation">
+                        Student in the Meow Devildom Kindergarten<br>
+                        The cherry magician<br>
+                        Software engineer
+                    </span>
+                </span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Programming language:<br>
+                    <span class=" d-block mt-2">
+                        <img src="icon/H5.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/CSS3.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/JS.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/Python.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/Csharp.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/PHP.svg" alt="" class="mastered_coding_logo">
+                    </span>
+
+                </span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Programming language learning in progress:<br>
+                    <span class=" d-block mt-2">
+                        <img src="icon/laravel.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/react.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/jquery.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/typescript.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/next-js.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/angular.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/JS.svg" alt="" class="mastered_coding_logo">(Async & ES6)
+                    </span>
+                </span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Programming language would like to learn:<br>
+                    <span class=" d-block mt-2">
+                        <img src="icon/rust.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/cpp.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/c.svg" alt="" class="mastered_coding_logo">
+                        <img src="icon/java.svg" alt="" class="mastered_coding_logo">
+                        BASIC
+                    </span>
+                </span>
+            </div>
+            <div class=" p-4 text-center">
+                <span>Note:<br>
+                    <span class="rocky_msg">Rocky will be here, keep being cute, trying my best to keep having good days
+                        with everyone!~</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--Footer, handled by pure Javascript.-->
+    <footer id="footer">
+    </footer>
+</body>
+<script>
+    const mark = "about";
+</script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="module" src="script/about.js"></script>
+
+</html>

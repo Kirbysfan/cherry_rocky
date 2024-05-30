@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please wait...</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--CSS file specially for current page-->
+    <link rel="stylesheet" href="style/story.css">
+    <!--Material Symbols-->
+    <link rel="stylesheet" href="node_modules/material-symbols/index.css">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!--Universal skin CSS file-->
+    <link rel="stylesheet" href="style/main.css">
+    <!--Website logo to be shown before title-->
+    <link rel="shortcut icon" href="icon/hoshi.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="load">
+        <div class="load_hoshi">
+            <img src="icon/hoshi_w.svg" alt="">
+        </div>
+    </div>
+    <!--Story controller-->
+    <div class="story_control_main">
+        <div class="story_control story_leave">
+            <div class="story_controller">
+                <span class="material-symbols-outlined">
+                    exit_to_app
+                </span>
+            </div>
+        </div>
+        <div class="story_control d-flex align-items-stretch">
+            <div class="story_back story_controller">
+                <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+            </div>
+            <div class="p-2">
+                <span class=" d-none d-md-inline">Story&nbsp;</span>
+                <span class="current_story">_</span>
+                /
+                <span class="total_story">_</span>
+            </div>
+            <div class="story_next story_controller ">
+                <span class="material-symbols-outlined">
+                    arrow_forward
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!--A navbar is still necessary, handled by JQuery things-->
+    <div id="rocky_nav" role="navigation">
+    </div>
+    <div class="gap"></div>
+    <div class="story_main p-4">
+        <span class="s_id"></span>
+        <h1 class="story_title"></h1>
+        <h5 class="story_sub"></h5>
+        <hr>
+        <div class="story_content "></div>
+    </div>
+    <!--Footer, handled by pure Javascript.-->
+    <footer id="footer">
+    </footer>
+    <!--Leave space for the floating controller-->
+    <div class="s_gap"></div>
+</body>
+<script>
+    const mark = "story";
+</script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="module" src="script/story.js"></script>
+
+</html>
