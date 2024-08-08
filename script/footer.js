@@ -32,7 +32,7 @@ export function showFooter() {
     const cpr = document.createElement("div");
     const c1 = document.createElement("p");
     const c2 = document.createElement("p");
-    c1.innerHTML = "Milestone 1 <br> 2022-2024 Kirbysfan. Dedicated to DNAxCAT community."
+    c1.innerHTML = "Milestone 1.01 <br> 2022-2024 Kirbysfan. Dedicated to DNAxCAT community."
     c2.innerHTML = "The DNAxCAT character design is copyrighted to DNAxCAT limited."
     cpr.appendChild(c1);
     cpr.appendChild(c2);
