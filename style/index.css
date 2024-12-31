@@ -109,7 +109,22 @@
 .welcome_links>a:hover>.w_link {
     margin-left: 16px;
 }
-
+.countdown{
+    position: absolute;
+    bottom: 12px;
+    background-color: black;
+    padding: 16px;
+    width: 100%;
+    max-width: 768px;
+    border-radius: 8px;
+    border: 4px solid #F48FB1;
+    text-align: center;
+}
+#newYearCountdown{
+    color: white;
+    font-size: 36px;
+    min-height: 36px;
+}
 @media (max-width: 768px) {
     .welcome {
         flex-direction: column;
