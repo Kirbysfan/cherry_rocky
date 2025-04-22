@@ -1,132 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to DNAxCAT Rocky's website!</title>
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!--CSS file specially for current page-->
-    <link rel="stylesheet" href="style/index.css">
-    <!--Material Symbols-->
-    <link rel="stylesheet" href="node_modules/material-symbols/index.css">
-    <!--Fontawesome-->
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <!--Universal skin CSS file-->
-    <link rel="stylesheet" href="style/main.css">
-    <!--Website logo to be shown before title-->
-    <link rel="shortcut icon" href="icon/hoshi.svg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <link rel="icon" href="./favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocky's website!</title>
+  <meta name="description" content="Welcome to Rocky's personal website!">
+  <meta name="keywords" content="DNAxCAT">
+  <meta name="keywords" content="九藏喵窝">
+  <meta name="keywords" content="九藏喵窩">
+  <meta name="keywords" content="猫のくらちゃん">
+  <meta name="keywords" content="洛奇">
+  <meta name="keywords" content="Rocky">
+  <meta name="keywords" content="DNAxCAT Rocky">
+  <meta name="keywords" content="Kirbysfan">
+  <meta name="author" content="kirbysfan1">
+  <script type="text/javascript">
+    // Single Page Apps for GitHub Pages
+    // MIT License
+    // https://github.com/rafgraph/spa-github-pages
+    // This script checks to see if a redirect is present in the query string,
+    // converts it back into the correct url and adds it to the
+    // browser's history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser's history for
+    // the single page app to route accordingly.
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <script type="module" crossorigin src="./assets/index-CU-1YVYS.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CUiDF-a9.css">
+  <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+  <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
 </head>
 
 <body>
-    <!--Loading screen, will disappear once every script is loaded.-->
-    <div id="load">
-        <div class="load_hoshi">
-            <img src="icon/hoshi_w.svg" alt="">
-        </div>
-    </div>
-    <!--A navbar is still necessary, handled by JQuery things-->
-    <div id="rocky_nav" role="navigation">
-    </div>
-    <div class="gap"></div>
-    <div class="main"><!--As large as Windows size-->
-        <!--The main part of the welcome page is a flexbox with 2 boxes-->
-        <div class=" position-absolute top-0 bg-danger py-2 w-100 m-0">
-            <p class="m-0 p-0 text-truncate text-light ps-2">This is a work in progress project and is not representative to the formal version.</p>
-        </div>
-        <div class="welcome">
-            <div class="d-flex flex-column align-items-center mt-5 mt-md-0"><!--Featuring DNAxCAT Rocky and the logo-->
-                <!--Artwork by chiyu-->
-                <img src="img/rocky_welcome.png" alt="" class="welcome_pic">
-                <img src="img/rocky_logo.png" alt="" class="welcome_logo">
-            </div>
-            <div class="ms-md-5"><!--Featuring all main parts of the page-->
-                <div class="welcome_links">
-                    <div>
-                        <div class="w_link">
-                            <h1>Welcome to my website!</h1>
-                        </div>
-                    </div>
-                    <a href="about.html">
-                        <div class="w_link_logo">
-                            <i class="fas fa-paw"></i>
-                        </div>
-                        <div class="w_link">
-                            <h3>
-                                About me
-                            </h3>
-                            <h5>Know more about me!</h5>
-                        </div>
-                    </a>
-                    <a href="stories.html">
-                        <div class="w_link_logo">
-                            <span class="material-symbols-outlined">
-                                book
-                            </span>
-                        </div>
-                        <div class="w_link">
-                            <h3>
-                                Stories
-                            </h3>
-                            <h5>My story in Yah-Den Mainland!</h5>
-                        </div>
-                    </a>
-                    <a href="#" class="link_disabled">
-                        <div class="w_link_logo">
-                            <span class="material-symbols-outlined">
-                                gallery_thumbnail
-                            </span>
-                        </div>
-                        <div class="w_link">
-                            <h3>
-                                Gallery
-                            </h3>
-                            <h5>My memory in Yah-Den Mainland!</h5>
-                        </div>
-                    </a>
-                    <a href="#" class="link_disabled">
-                        <div class="w_link_logo">
-                            <span class="material-symbols-outlined">
-                                toys_and_games
-                            </span>
-                        </div>
-                        <div class="w_link">
-                            <h3>
-                                Playground
-                            </h3>
-                            <h5>Interesting things I've made!</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="countdown">
-            <div id="newYearCountdown"></div>
-            <div id="newYearStatus">
-                <div id="newYearStatusP"></div>
-            </div>
-        </div>
-        <!--
-            <div class="contrast_switch">
-            <div class="contrast_logo"><span class="material-symbols-outlined">
-                    flashlight_off
-                </span></div>
-            <span>High contrast mode<br>(If unable to see clearly)</span>
-        </div>
-        -->
-
-    </div>
-    <!--Footer, handled by pure Javascript.-->
-    <footer id="footer">
-    </footer>
+  <div id="app">
+  </div>
+  <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+  <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-DGDP-h54.js"></script>
+  <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-BubTJzfh.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
 </body>
-<script>
-    const mark = "index";
-</script>
-<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="module" src="script/index.js"></script>
-<script src="script/newYearCountdown2025.js"></script>
+
 </html>
