@@ -1,1 +1,0 @@
-System.register(["./index-legacy-B5Mytucp.js"],(function(e,t){"use strict";var n;return{setters:[function(e){n=e._}],execute:function(){e("default",n({data:function(){return{}},methods:{}},[["render",function(e,t,n,r,u,c){return null}]]))}}}));
