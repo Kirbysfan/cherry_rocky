@@ -10,7 +10,8 @@
             "Rocky_By_薰凝.webp"
         ],
         "content": "<p class=\"p_indent\">This is rocky! A cat who wants to be cuter while also a mania of technology!</p><p class=\"p_indent\">Nice to meet you, kitties in Yah Den Mainland!</p>",
-        "link": {}
+        "link": {},
+        "hide": false
     },
     {
         "id": 2,
@@ -25,7 +26,8 @@
         "content": "<p>Chocolate Meow chocolate... More... =v=</p><p class=\"secret\"><em>(Actually sometimes I'm even more addicted to that than Kyuzo the king!)</em></p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47139-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 3,
@@ -40,7 +42,8 @@
         "content": "<p>Death from above: Bonk the cat over their head to give them a lethal hit!</p><p class=\"secret\"><em>Note: No cat have been hurt in this picture.</em></p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47244-1-1.html"
-        }
+        },
+        "hide": true
     },
     {
         "id": 4,
@@ -53,7 +56,8 @@
             "under_the_sun.jpg"
         ],
         "content": "<p>What a wonderful day outside. =v=<br>How could I enjoy such a wonderful day without chocolate meow cookie?<br><em>Om nom nom nom...</em> Delicious!</p>",
-        "link": {}
+        "link": {},
+        "hide": false
     },
     {
         "id": 5,
@@ -69,7 +73,8 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47447-1-1.html",
             "facebook": "https://www.facebook.com/tama48849"
-        }
+        },
+        "hide": false
     },
     {
         "id": 6,
@@ -82,7 +87,8 @@
             "inflatted_rocky.jpg"
         ],
         "content": "<p>&nbsp;&nbsp&nbsp;&nbspOne day I came out finding a package of meow chocolate cookie in my mailbox. It didn't say where did it come from.<br>&nbsp;&nbsp;&nbsp;&nbspHowever, I still accepted, took it to the backyard and started enjoying.<br>&nbsp;&nbsp;&nbsp;&nbspI didn't feel something weird when I took the first bite, but a few moments later, I started... Feeling abnormal...<br>&nbsp;&nbsp;&nbsp;&nbspI discovered that my belly is growing bigger, just like a balloon being inflatted!<br>&nbsp;&nbsp;&nbsp;&nbspSooner, my belly became round and big, just like a balloon. I can hardly move... Ah... I'll never eat things indiscriminantly again!<br></p>",
-        "link": {}
+        "link": {},
+        "hide": true
     },
     {
         "id": 7,
@@ -97,7 +103,8 @@
         "content": "<p>A few days ago I and other cats helped CookBaron to choose the best clothes!<br>And this, and what of other participated cats is what she awarded us!<br>Does this looks delicious? The answer is yes for me. =v=</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47511-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 8,
@@ -113,7 +120,8 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47635-1-1.html",
             "facebook": "https://www.facebook.com/profile.php?id=100064028765966"
-        }
+        },
+        "hide": false
     },
     {
         "id": 9,
@@ -128,7 +136,8 @@
         "content": "<p>Mew... Ummmmmm... (⁠◡⁠ ⁠ω⁠ ⁠◡⁠)</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47756-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 10,
@@ -143,7 +152,8 @@
         "content": "<p>&nbsp;&nbsp&nbsp;&nbspNyahoo!!! Trick or treat!! Give me your candy!!!<br>&nbsp;&nbsp&nbsp;&nbspI know it might be a little late to do so now...<br>&nbsp;&nbsp&nbsp;&nbspBut anyway, maybe next halloween I'll dress up like this!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47716-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 11,
@@ -159,7 +169,8 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47855-1-1.html",
             "facebook": "https://www.facebook.com/profile.php?id=100064028765966"
-        }
+        },
+        "hide": false
     },
     {
         "id": 12,
@@ -174,7 +185,8 @@
         "content": "<p>It was really funny playing with Hideki in the Snow Land!<br>But... It was really cold being made into snowman... A--Choo!!!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47833-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 13,
@@ -187,7 +199,8 @@
             "snow_party.jpg"
         ],
         "content": " <p>One day when playing with others in the Snow Land...<br>Let's play snow ball, Shanshan! Wait... Where did this... *POW!*</p><div style=\"border: solid 2px white; background-color:black; text-align:center; line-height: 10px; border-radius: 4px;\"><p>Shanshan&nbsp;&nbsp;⚪ ➡&nbsp;&nbsp;Rocky</p></div>",
-        "link": {}
+        "link": {},
+        "hide": false
     },
     {
         "id": 14,
@@ -203,7 +216,8 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-47833-1-1.html",
             "facebook": "https://www.facebook.com/profile.php?id=100064028765966"
-        }
+        },
+        "hide": false
     },
     {
         "id": 15,
@@ -218,7 +232,8 @@
         "content": "<p>It's Shuanglin's birthday today! And I'm going to give him a surprise!<br>With the cake on my hands, hiding in a corner, waiting for Shuanglin...<br>When he appeared...<br><h4 style=\"font-size:larger;\">Ta--da!!! Happy birthday to you, Shuanglin!!!</h4><br>Shuanglin, who usually has a long face, finally smiled!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48084-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 16,
@@ -234,7 +249,8 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48116-1-1.html",
             "facebook": "https://www.facebook.com/tama48849"
-        }
+        },
+        "hide": false
     },
     {
         "id": 17,
@@ -250,7 +266,8 @@
         "content": "<p>For many times, I was misrecognized as a girl mainly because of the ribbon, and my tone.<br>Seems that I'm perfect for being a girl wwwww</p><p class=\"secret\"><em>(And... that's what I wish.)</em></p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48295-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 18,
@@ -265,7 +282,8 @@
         "content": "<p>Nyahoo!!! This is my first time having Spring Festival* after moving to the Meow Kingdom!<br>Here, I wish everyone a happy year of bunny!!!! >w< </p><p class=\"secret\" style=\"margin: 16px;\">* Also Chinese new year, Lunar new year.</p>",
         "link": {
             "facebook": "https://www.facebook.com/profile.php?id=100064028765966"
-        }
+        },
+        "hide": false
     },
     {
         "id": 19,
@@ -280,7 +298,8 @@
         "content": "<p>&nbsp;&nbsp&nbsp;&nbspI and Hideki is now couples!<br>&nbsp;&nbsp&nbsp;&nbspWhen we're together, I love being patted by him!~<br>&nbsp;&nbsp&nbsp;&nbspAweeeee! So comfortable!!!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48498-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 20,
@@ -296,7 +315,8 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48503-1-1.html",
             "facebook": "https://www.facebook.com/tama48849"
-        }
+        },
+        "hide": false
     },
     {
         "id": 21,
@@ -311,7 +331,8 @@
         "content": "<p>&nbsp;&nbsp&nbsp;&nbspUh... It's just another meow who looks just like H***o K***y...<br>&nbsp;&nbsp&nbsp;&nbspWait... Really! I'm not lying reall...<br>&nbsp;&nbsp&nbsp;&nbspWell, I admit, that's me who became Hideki's maid...</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48546-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 22,
@@ -326,7 +347,8 @@
         "content": "<p>It's Chihiro's birthday today! And I'm going to give her a surprise too!<br>These are the thing she indeed like -- Giant narutomaki!<br></p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48599-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 23,
@@ -341,7 +363,8 @@
         "content": "<p>I've never blamed with those who misrecognized me as a girl.<br> Actually, I really wanted to be a girl. Just like the Ugly Duckling transforming into the white geese.<br>I want to change my gender, for real, so that I can finallly be much more cuter, while getting rid of some anoying things.~</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48761-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 24,
@@ -357,7 +380,8 @@
         "content": "<p>My first birthday in Yah Den Mainland! Thanks everyone for being together with me!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-48951-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 25,
@@ -370,7 +394,8 @@
             "rocky_popcorn.jpg"
         ],
         "content": "<p>Have just finished all the project I have, and now I have nothing to do.<br>How about selling... popcorn?</p>",
-        "link": {}
+        "link": {},
+        "hide": false
     },
     {
         "id": 26,
@@ -386,7 +411,8 @@
         "content": "<p>It all started from one day when I decided to find some cherry for popcorn, and then found a magical cherry attracting me to eat it...</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-49019-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 27,
@@ -399,10 +425,11 @@
             "rocky_and_plushie.png",
             "rocky_and_plushie_nt.png"
         ],
-        "content": "<p>In my inner heart I've always been like a little gitl. While I had already been loving cute things before, my love on then became deeper after I became the cherry meow!</p>",
+        "content": "<p>In my inner heart I've always been like a little girl. While I had already been loving cute things before, my love on then became deeper after I became the cherry meow!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-49160-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 28,
@@ -415,11 +442,12 @@
             "cherry_rocky_t.jpg",
             "cherry_rocky_t_female.jpg"
         ],
-        "content": "<p>The magic cherry changed me entirely! I'm now cute, femmine, and energetic!</p><p>Due to the impact of the cherry, the Meow Kingdom is no longer suitable fot me to live, from now on I'm moving to the cherry forest in the Sakura village!</p>",
+        "content": "<p>The magic cherry changed me entirely! I'm now cute, femmine, and energetic!</p><p>Due to the impact of the cherry, the Meow Kingdom is no longer suitable fot me to live, from now on I'm moving to the cherry forest in the Cherry Blossom village!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-49277-1-1.html",
             "facebook": "https://www.facebook.com/tama48849"
-        }
+        },
+        "hide": false
     },
     {
         "id": 29,
@@ -431,10 +459,11 @@
         "src": [
             "rocky_hideki_at_the_beach.jpg"
         ],
-        "content": "<p>After discussing with Hideki, we decided to have fun at the beach near the Sakura village and make a sand castle! We had a lot of fun, building it all the way from afternoon to the sunset...</p>",
+        "content": "<p>After discussing with Hideki, we decided to have fun at the beach near the Cherry Blossom village and make a sand castle! We had a lot of fun, building it all the way from afternoon to the sunset...</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-49446-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 30,
@@ -448,10 +477,11 @@
             "yukata_rocky_.png",
             "yukata_rocky_4x.jpg"
         ],
-        "content": "<p>Hearing that there are firework show during Yukata Festival in the Sakura Village, I decided to participate!</p><p>This is my yukata, with cute cherry pattern!</p>",
+        "content": "<p>Hearing that there are firework show during Yukata Festival in the Cherry Blossom Village, I decided to participate!</p><p>This is my yukata, with cute cherry pattern!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-49598-1-1.html"
-        }
+        },
+        "hide": true
     },
     {
         "id": 31,
@@ -466,7 +496,8 @@
         "content": "<p>Last halloween is still like yesterday...</p><p>For this time, I'd like to be a kawaii little witch!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-50002-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 32,
@@ -483,7 +514,8 @@
         "content": "<p>I love to eat, and won't settle when there's delicious food!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-50082-1-1.html"
-        }
+        },
+        "hide": true
     },
     {
         "id": 33,
@@ -498,7 +530,8 @@
         "content": "<p>baboo</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-50026-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 34,
@@ -513,7 +546,8 @@
         "content": "<p>Hideki is a meow who love to glutton, when he meets delicious food, no one can stop him.</p><p>And that's why there's a giant bottle of soda for him!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-50110-1-1.html"
-        }
+        },
+        "hide": false
     },
     {
         "id": 35,
@@ -529,6 +563,7 @@
         "content": "<p>This is a christmas tree that use meows as decoration, the star on the top of the tree is powered by a candle and that's why it needs flame... Oh well I don't know how to explain.</p><p><strong>WARNING: The fire is fake, and no meows were hurt in this picture.</strong></p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-50287-1-1.html"
-        }
+        },
+        "hide": false
     }
 ]
