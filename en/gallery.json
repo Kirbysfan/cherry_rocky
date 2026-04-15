@@ -695,11 +695,13 @@
         "timeline": -1,
         "vanilla": 0,
         "src": [
-            "rocki_formal.jpg"
+            "rocki_formal.jpg",
+            "rocki_beginning_bg.png",
+            "rocki_jojifuku.jpg"
         ],
         "content": "<table width='100%' cellspacing='2' cellpadding='2' border='1'><tbody><tr><td valign='top'>Name<br></td><td valign='top'>Rocky<br></td></tr><tr><td valign='top'>Gender<br></td><td valign='top'>♂...?<br></td></tr><tr><td valign='top'>Species<br></td><td valign='top'>Meow<br></td></tr><tr><td valign='top'>Liveplace<br></td><td valign='top'>Cherry Blossom Village<br></td></tr><tr><td valign='top'>Comps<br></td><td valign='top'>Cherry pacifier, plushie, white star badge that has important meanings, cherry on the head, UMPC<br></td></tr><tr><td valign='top'>Job<br></td><td valign='top'>The cherry magician, the student of Meow Kingdom Kindergarten<br></td></tr><tr><td valign='top'>Favorite food:<br></td><td valign='top'>Meow chocolate cookie, cherry, and everything made of cherry!<br></td></tr><tr><td valign='top'>Hobby:<br></td><td valign='top'>Learn to code, be cute, have fun with others!<br></td></tr><tr><td valign='top'>Introducion<br></td><td valign='top'>A cute kitty due to the curse of cherry magic from eating the magic cherry attracted them. Since then they had been living in the cherry forest of the Cherry Blossom Village, being the symbol of cherry in the Yah-Den Mainland, and was later being adopted by a black cat called Hideki.<br></td></tr></tbody></table>",
         "link": {
-            "forum": "https://dnaxcattalk.dnaxcat.net/thread-51005-1-1.html"
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-51410-1-1.html"
         },
         "hide": false
     },
