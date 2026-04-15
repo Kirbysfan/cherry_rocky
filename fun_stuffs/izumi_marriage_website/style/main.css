@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'CherryBomb';
+    src: url('../assets/CherryBombOne-Regular.ttf');
+}
+
+#load {
+    width: 100vw;
+    height: 100vh;
+    /* aspect-ratio: 16/9; */
+    position: fixed;
+    top: 0;
+    z-index: 1280;
+    background-color: #F48FB1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    transition: 800ms;
+
+    .load_hoshi>img {
+        width: 8vw;
+        min-width: 72px;
+    }
+
+    .load_hoshi {
+        width: 8vw;
+        height: 8vw;
+        min-width: 72px;
+        min-height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: rotation 4000ms linear infinite;
+    }
+}
+
+
+.izumi-navbar {
+    opacity: 0;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.page-ctx {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#fcaadf, #feedf8);
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.page-ctx-inner {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16/9;
+    position: relative;
+}
+
+.circle-1 {
+    position: absolute;
+    width: 60rem;
+    aspect-ratio: 1/1;
+    background-color: #FFF;
+    border-radius: 100%;
+    bottom: -15rem;
+    right: -15rem;
+    opacity: 60%;
+    transition: opacity 500ms;
+    animation: shining 9000ms linear infinite;
+    animation-delay: -2000ms;
+    z-index: 2;
+}
+
+.circle-2 {
+    position: absolute;
+    width: 54rem;
+    aspect-ratio: 1/1;
+    background-color: #FFF;
+    border-radius: 100%;
+    top: -15rem;
+    left: -15rem;
+    opacity: 60%;
+    transition: opacity 500ms;
+    animation: shining 8000ms linear infinite;
+    z-index: 2;
+}
+
+.circle-3 {
+    position: absolute;
+    width: 24rem;
+    aspect-ratio: 1/1;
+    background-color: #FFF;
+    border-radius: 100%;
+    left: 23rem;
+    top: 28rem;
+    z-index: 1;
+    animation: shining 7500ms linear infinite;
+    animation-delay: -1000ms;
+}
+
+.circle-4 {
+    position: absolute;
+    width: 20rem;
+    aspect-ratio: 1/1;
+    background-color: #FFF;
+    border-radius: 100%;
+    right: 25rem;
+    bottom: 30rem;
+    z-index: 1;
+    animation: shining 7500ms linear infinite;
+    animation-delay: -1000ms;
+}
+
+.title {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, 0);
+    font-family: 'CherryBomb';
+    font-size: 6vw;
+    color: #FFA596;
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: white;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+
+    span {
+        display: block;
+        /* font-size: 24px; */
+        font-size: 2vw;
+        color: #3e2723;
+        -webkit-text-stroke-width: 0;
+        -webkit-text-stroke-color: transparent;
+    }
+}
+
+.izumi_and_zhima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    .izumi_and_zhima_inner {
+        .izumi-text {
+            position: absolute;
+            right: -30%;
+            bottom: 0;
+            color: #efafb0;
+            font-family: 'CherryBomb';
+            font-size: 4vw;
+            -webkit-text-stroke-width: 0.1vw;
+            -webkit-text-stroke-color: white;
+        }
+
+        .zhima-text {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            color: #93cafe;
+            font-family: 'CherryBomb';
+            font-size: 4vw;
+            -webkit-text-stroke-width: 0.1vw;
+            -webkit-text-stroke-color: white;
+            text-align: right;
+        }
+
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+
+        img {
+            width: 30vw;
+            max-width: 576px;
+            -webkit-user-drag: none;
+
+        }
+
+        .zhima {
+            position: relative;
+            left: 4vw;
+            z-index: 1;
+
+            .headBox {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 58.1%;
+                /* border: 1px solid #000; */
+                cursor: pointer;
+
+                &:active {
+                    cursor: grab;
+                }
+            }
+        }
+
+        .izumi {
+            position: relative;
+            right: 4vw;
+            z-index: 2;
+
+            .headBox {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 61%;
+                /* border: 1px solid #000; */
+                cursor: pointer;
+
+                &:active {
+                    cursor: grab;
+                }
+            }
+
+            .ring-light {
+                position: absolute;
+                width: 3vw;
+                max-width: 57.6px;
+                top: 70.9%;
+                left: 8.1%;
+                animation: ring-shining 2000ms infinite linear;
+            }
+        }
+    }
+}
+}
+
+@media(max-width: 1600px) {
+    .izumi_and_zhima {
+        top: 60% !important;
+    }
+}
+
+@media(min-width: 1920px) {
+    .zhima {
+        left: 76.8px !important;
+    }
+
+    .izumi {
+        right: 76.8px !important;
+    }
+}
+
+@keyframes ring-shining {
+    0% {
+        opacity: 0;
+        rotate: 0deg;
+    }
+
+    50% {
+        opacity: 100%;
+        rotate: 180deg;
+    }
+
+    100% {
+        opacity: 0;
+        rotate: 360deg;
+    }
+}
+
+@keyframes shining {
+    0% {
+        opacity: 60%;
+    }
+
+    25% {
+        opacity: 30%;
+    }
+
+    50% {
+        opacity: 60%;
+    }
+
+    75% {
+        opacity: 10%;
+    }
+
+    100% {
+        opacity: 60%;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#particle-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+}

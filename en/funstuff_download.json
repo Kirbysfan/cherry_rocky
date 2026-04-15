@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Vanilla Rocky's carte (png)",
+        "route": "/fun_stuffs/downloadables/rocky_stripe.png",
+        "md5": "bea2777086441427abd22f7a00caba50",
+        "sha256": "b16b3a9cf8b37ee1537faeb34e0e987440afe551150f978b0caa31a1674c64fe"
+    },
+    {
+        "id": 2,
+        "title": "Adult Cherry Rocky's carte (png)",
+        "route": "/fun_stuffs/downloadables/rocky_stripe_new_male.png",
+        "md5": "f31978e371d69eaf69078c637c120757",
+        "sha256": "fc03dbab7247f6dfc004d8716c831986998a197f1fbb5b7230419a56b3081d6b"
+    }
+]

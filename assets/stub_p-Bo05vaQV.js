@@ -1,0 +1,1 @@
+const s="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3csvg%20viewBox='0%200%201800%20768'%20xmlns='http://www.w3.org/2000/svg'/%3e",e="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3csvg%20viewBox='0%200%20480%20640'%20xmlns='http://www.w3.org/2000/svg'/%3e";export{s as _,e as a};

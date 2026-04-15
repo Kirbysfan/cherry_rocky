@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style/floating_particles.css">
+</head>
+
+<body>
+    <div id="load">
+        <div class="load_hoshi">
+            <img src="assets/hoshi_w.svg" alt="" />
+        </div>
+    </div>
+    <div class="izumi-navbar navbar fixed-top bg-dark d-flex p-3 align-items-center">
+        <div class="d-flex w-100 align-items-center text-white">
+            <p class="m-0">PC or tablet with a landscape orientation is recommended for the best viewing experience.</p>
+            <div class="flex-grow-1"></div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More...</button>
+            <div class="btn btn-primary ms-3" onclick="doMusicControl()">Music</div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">More...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body user-select-auto">
+                    <span class="h3">Bless to you!</span><br>
+                    What a cute kitty couples!<br>
+                    Wish you can be together forever!<br>
+                    Artwork by Kirbysfan<br>
+                    BGM: rryam.mid - fether / こうもりさん, available <a href="https://fether.exblog.jp/#Other">here</a><br>
+                    This is a dump of the midi above played using this soundfont: <a
+                        href="https://emu-france.com/emulateurs/311-/313-/4232-/">Here</a><br>
+                    Part of the effects are based on ideas from codepen.io
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                BGM: rryam.mid - fether / こうもりさん
+            </div>
+        </div>
+    </div>
+    <div class="page-ctx" id="app">
+        <div class="page-ctx-inner">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+            <h1 class="title">
+                Congratulations!<br>
+                <span>2025/10/2</span>
+            </h1>
+            <div class="izumi_and_zhima">
+                <div class="izumi_and_zhima_inner">
+
+
+                    <div class="zhima">
+                        <h1 class="zhima-text">Zhima</h1>
+                        <div class="headBox" @mousedown="zhima_blink()" @mouseup="zhima_stop_blink()"
+                            @mouseleave="zhima_stop_blink()"></div>
+                        <img src="assets/dondon.png" v-if="zhimaBlink === false" alt="">
+                        <img src="assets/dondon_blink.png" v-else alt="">
+                    </div>
+                    <div class="izumi">
+                        <h1 class="izumi-text">Izumikawa</h1>
+                        <div class="headBox" @mousedown="izumi_blink()" @mouseup="izumi_stop_blink()"
+                            @mouseleave="izumi_stop_blink()"></div>
+                        <img class="ring-light" src="assets/light.png" alt="">
+                        <img src="assets/izumikawa.png" v-if="izumiBlink === false" alt="">
+                        <img src="assets/izumi_blink.png" v-else alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="particle-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="assets/bootstrap.min.js"></script>
+<script src="assets/popper.min.js"></script>
+<script src="assets/vue.js"></script>
+<script src="assets/jquery.min.js"></script>
+<script>
+    const bgm = new Audio("assets/rryam.ogg");
+    const toastLiveExample = document.getElementById('liveToast')
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    function doMusicControl() {
+        console.log(this.isMusic);
+        if (main_script.isMusic === true) {
+            bgm.pause();
+            bgm.currentTime = 0;
+            main_script.isMusic = false;
+        }
+        else {
+            bgm.play();
+            bgm.loop = true;
+            toastBootstrap.show();
+            main_script.isMusic = true;
+        }
+    }
+    let main_script = new Vue({
+        data: {
+            isTrue: true,
+            izumiBlink: false,
+            zhimaBlink: false,
+            isMusic: false
+        },
+        created() {
+            console.log(this.isTrue);
+            if (window.confirm('Enable music?')) {
+
+                bgm.play().then(res => {
+                    toastBootstrap.show();
+                    this.isMusic = true;
+                    bgm.loop = true;
+                }).catch(error => {
+                    console.error("Failed to play music automatically:", error);
+                    alert("Looks like you entered the site by refreshing or via entering the url.\nPlease click the 'Music' button to play the music manually.");
+                    this.isMusic = false;
+                })
+                this.makeLoadFade();
+                setTimeout(() => {
+                    this.makeLoadDisappear();
+                }, 800);
+            }
+            else {
+                this.makeLoadFade();
+                setTimeout(() => {
+                    this.makeLoadDisappear();
+                }, 800);
+            }
+            console.log(this.isMusic)
+        },
+        methods: {
+            makeLoadDisappear() {
+                $("#load").css("display", "none");
+                console.log($("#load").css("display"));
+            },
+
+            makeLoadFade() {
+                $("#load").css("opacity", 0);
+            },
+            izumi_blink() {
+                this.izumiBlink = true;
+            },
+            izumi_stop_blink() {
+                this.izumiBlink = false;
+            },
+            zhima_blink() {
+                this.zhimaBlink = true;
+            },
+            zhima_stop_blink() {
+                this.zhimaBlink = false;
+            },
+
+        }
+    }).$mount('#app')
+</script>
+
+</html>
