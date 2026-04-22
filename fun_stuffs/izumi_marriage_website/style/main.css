@@ -3,6 +3,10 @@
     src: url('../assets/CherryBombOne-Regular.ttf');
 }
 
+.modal-backdrop {
+    z-index: 2000 !important;
+}
+
 #load {
     width: 100vw;
     height: 100vh;
@@ -198,10 +202,10 @@
                 width: 100%;
                 height: 58.1%;
                 /* border: 1px solid #000; */
-                cursor: pointer;
+                cursor: grab;
 
                 &:active {
-                    cursor: grab;
+                    cursor: grabbing;
                 }
             }
         }
@@ -218,10 +222,10 @@
                 width: 100%;
                 height: 61%;
                 /* border: 1px solid #000; */
-                cursor: pointer;
+                cursor: grab;
 
                 &:active {
-                    cursor: grab;
+                    cursor: grabbing;
                 }
             }
 

@@ -19,13 +19,14 @@
     </div>
     <div class="izumi-navbar navbar fixed-top bg-dark d-flex p-3 align-items-center">
         <div class="d-flex w-100 align-items-center text-white">
-            <p class="m-0">PC or tablet with a landscape orientation is recommended for the best viewing experience.</p>
+            <!-- <p class="m-0">PC or tablet with a landscape orientation is recommended for the best viewing experience.</p> -->
             <div class="flex-grow-1"></div>
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">More...</button>
             <div class="btn btn-primary ms-3" onclick="doMusicControl()">Music</div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div style="z-index: 2048;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -44,6 +45,26 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="z-index: 2048;" class="modal fade" id="soundPopup" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="soundPopupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="soundPopupLabel">Before visiting...</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    Enable sound?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                        onclick="enableMusicFirstLoad()">Yes</button>
+                    <button onclick="notEnableMusicFirstLoad()" type="button" class="btn btn-secondary "
+                        data-bs-dismiss="modal">No</button>
                 </div>
             </div>
         </div>
@@ -71,18 +92,18 @@
 
                     <div class="zhima">
                         <h1 class="zhima-text">Zhima</h1>
-                        <div class="headBox" @mousedown="zhima_blink()" @mouseup="zhima_stop_blink()"
-                            @mouseleave="zhima_stop_blink()"></div>
-                        <img src="assets/dondon.png" v-if="zhimaBlink === false" alt="">
-                        <img src="assets/dondon_blink.png" v-else alt="">
+                        <div class="headBox" @mousedown="zhima_blink()"
+                            @mouseup="zhima_stop_blink()" @mouseleave="zhima_stop_blink()"></div>
+                        <img src="assets/dondon.png" draggable="false" v-if="zhimaBlink === false" alt="">
+                        <img src="assets/dondon_blink.png" draggable="false" v-else alt="">
                     </div>
                     <div class="izumi">
                         <h1 class="izumi-text">Izumikawa</h1>
                         <div class="headBox" @mousedown="izumi_blink()" @mouseup="izumi_stop_blink()"
                             @mouseleave="izumi_stop_blink()"></div>
                         <img class="ring-light" src="assets/light.png" alt="">
-                        <img src="assets/izumikawa.png" v-if="izumiBlink === false" alt="">
-                        <img src="assets/izumi_blink.png" v-else alt="">
+                        <img src="assets/izumikawa.png" draggable="false" v-if="izumiBlink === false" alt="">
+                        <img src="assets/izumi_blink.png" draggable="false" v-else alt="">
                     </div>
                 </div>
             </div>
@@ -174,6 +195,31 @@
             main_script.isMusic = true;
         }
     }
+    function enableMusicFirstLoad() {
+        bgm.play().then(res => {
+            toastBootstrap.show();
+            this.isMusic = true;
+            bgm.loop = true;
+        }).catch(error => {
+            console.error("Failed to play music automatically:", error);
+            alert("Looks like you entered the site by refreshing or via entering the url.\nPlease click the 'Music' button to play the music manually.");
+            this.isMusic = false;
+        })
+        main_script.makeLoadFade();
+        setTimeout(() => {
+            main_script.makeLoadDisappear();
+        }, 800);
+    }
+    function notEnableMusicFirstLoad() {
+        main_script.makeLoadFade();
+        setTimeout(() => {
+            main_script.makeLoadDisappear();
+        }, 800);
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        var myModal = new bootstrap.Modal(document.getElementById('soundPopup'));
+        myModal.show();
+    });
     let main_script = new Vue({
         data: {
             isTrue: true,
@@ -183,31 +229,33 @@
         },
         created() {
             console.log(this.isTrue);
-            if (window.confirm('Enable music?')) {
+            //if (window.confirm('Enable music?')) {
 
-                bgm.play().then(res => {
-                    toastBootstrap.show();
-                    this.isMusic = true;
-                    bgm.loop = true;
-                }).catch(error => {
-                    console.error("Failed to play music automatically:", error);
-                    alert("Looks like you entered the site by refreshing or via entering the url.\nPlease click the 'Music' button to play the music manually.");
-                    this.isMusic = false;
-                })
-                this.makeLoadFade();
-                setTimeout(() => {
-                    this.makeLoadDisappear();
-                }, 800);
-            }
-            else {
-                this.makeLoadFade();
-                setTimeout(() => {
-                    this.makeLoadDisappear();
-                }, 800);
-            }
-            console.log(this.isMusic)
+            //bgm.play().then(res => {
+            //    toastBootstrap.show();
+            //    this.isMusic = true;
+            //    bgm.loop = true;
+            //}).catch(error => {
+            //    console.error("Failed to play music automatically:", error);
+            //    alert("Looks like you entered the site by refreshing or via entering the url.\nPlease click the 'Music' button to play the music manually.");
+            //    this.isMusic = false;
+            //})
+            //this.makeLoadFade();
+            //setTimeout(() => {
+            //    this.makeLoadDisappear();
+            //}, 800);
+            //}
+            //else {
+            //    this.makeLoadFade();
+            //    setTimeout(() => {
+            //        this.makeLoadDisappear();
+            //    }, 800);
+            //}
+            //console.log(this.isMusic)
         },
         methods: {
+
+
             makeLoadDisappear() {
                 $("#load").css("display", "none");
                 console.log($("#load").css("display"));

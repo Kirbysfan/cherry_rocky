@@ -1,7 +1,6 @@
 {
-    "rocky_switch_vanilla":
-    {
-        "rocky_pfp": "rocky_about_vanilla.png",
+    "rocky_switch_vanilla": {
+        "rocky_pfp": "rocky_about_vanilla.webp",
         "rocky_name": "Rocky",
         "rocky_gender": "♂",
         "rocky_liveplace": "Meow Kingdom",
@@ -12,9 +11,8 @@
         "rocky_occupation": "Software engineer",
         "rocky_msg": "Nice to meet you all!"
     },
-    "rocky_switch_cherry":
-    {
-        "rocky_pfp": "rocky_about_cherry.png",
+    "rocky_switch_cherry": {
+        "rocky_pfp": "rocky_about_cherry.webp",
         "rocky_name": "Rocky",
         "rocky_gender": "♂...?",
         "rocky_liveplace": "Cherry Blossom Village",
@@ -25,9 +23,8 @@
         "rocky_occupation": "The Cherry Magician <br> Software engineer",
         "rocky_msg": "Nice to meet you all!"
     },
-    "rocky_switch_current":
-    {
-        "rocky_pfp": "rocky_about_current.png",
+    "rocky_switch_current": {
+        "rocky_pfp": "rocky_about_current.webp",
         "rocky_name": "Rocky",
         "rocky_gender": "♂...?",
         "rocky_liveplace": "Cherry Blossom Village",

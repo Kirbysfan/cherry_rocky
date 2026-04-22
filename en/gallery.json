@@ -552,7 +552,7 @@
         "title": "GIANT TAKOYAKI",
         "sub": "Never settle when there's delicious food!",
         "date": "10/22/2023",
-        "artist": "糖悠悠 & breezecat",
+        "artist": "saturn_nyan",
         "timeline": 1,
         "vanilla": 0,
         "src": [
@@ -562,7 +562,8 @@
         ],
         "content": "<p>I love to eat, and won't settle when there's delicious food!</p>",
         "link": {
-            "forum": "https://dnaxcattalk.dnaxcat.net/thread-50082-1-1.html"
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-50082-1-1.html",
+            "facebook": "https://www.facebook.com/tama48849"
         },
         "hide": true
     },
@@ -648,14 +649,15 @@
         ],
         "content": "<p>It smells like cherries.</p><p>Would you like to try some?</p>",
         "link": {
-            "forum": "https://dnaxcattalk.dnaxcat.net/thread-50735-1-1.html"
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-50735-1-1.html",
+            "facebook": "https://www.facebook.com/tama48849"
         },
         "hide": false
     },
     {
         "id": 39,
         "title": "The new student of the Meow Devildom Kindergarten!",
-        "sub": "The permament little cherry meow",
+        "sub": "The permanent little cherry meow",
         "date": "4/28/2024",
         "artist": "saturn_nyan",
         "timeline": 1,
@@ -672,7 +674,7 @@
     {
         "id": 40,
         "title": "I love my new childlish life!🩷",
-        "sub": "The permament little cherry meow",
+        "sub": "I'm the kawaii cherry meow that never grows up!",
         "date": "5/2/2024",
         "artist": "Chiyu",
         "timeline": 1,
@@ -689,9 +691,9 @@
     {
         "id": 41,
         "title": "DNAxCAT Rocky formal design",
-        "sub": "The permament little cherry meow",
+        "sub": "The permanent little cherry meow",
         "date": "6/22/2024",
-        "artist": "saturn_nyan",
+        "artist": "saturn_nyan, breezecat",
         "timeline": -1,
         "vanilla": 0,
         "src": [
@@ -707,8 +709,80 @@
     },
     {
         "id": 42,
+        "title": "Super Kawaii cherry princess!",
+        "sub": "2 years of DNAxCAT Rocky!",
+        "date": "7/26/2024",
+        "artist": "saturn_nyan",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocky_princess.png"
+        ],
+        "content": "<p>It've been 2 years... Today I'll be the magical cherry princess that prosper the cherry forest!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-51572-1-1.html",
+            "facebook": "https://www.facebook.com/tama48849"
+        },
+        "hide": false
+    },
+    {
+        "id": 43,
+        "title": " ¡Me gusta bebo leche~🩷! ",
+        "sub": "De verdad",
+        "date": "8/21/2024",
+        "artist": "breezecat",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocky_bebe_leche_tp.png"
+        ],
+        "content": "<p>Me gusta bebo leche<br>Yo disfruto bebo leche<br>Yo estoy feliz y contento🩷</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-51721-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 44,
+        "title": "I am the Cheri-taro!",
+        "sub": "Wasn't cherry a kind of peach?",
+        "date": "9/23/2024",
+        "artist": "saturn_nyan",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "cheritaro_rocky_stamp.jpg",
+            "cheritaro_rocky.png",
+            "cheritaro_rocky_stamp_tiles.jpg"
+        ],
+        "content": "<p>Aha! Who are you?<br>I'm the cheri-taro! The defender of the cherry forest!<br>Why are you doubting? Isn't cherry a kind og peach?</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-51859-1-1.html",
+            "facebook": "https://www.facebook.com/tama48849"
+        },
+        "hide": true
+    },
+    {
+        "id": 45,
+        "title": "Mimimimimimimimi",
+        "sub": "Mimimimimimimimi?",
+        "date": "10/31/2023",
+        "artist": "糖悠悠",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocky_michousi.jpg"
+        ],
+        "content": "<p style='word-wrap: break-word'>Mimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimimi</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-51970-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 46,
         "title": "You are so cute with this pacifier!",
-        "sub": "The beginning of my babyish and kawaii life~s",
+        "sub": "The beginning of my babyish and kawaii life~",
         "date": "11/29/2024",
         "artist": "BreezeCat",
         "timeline": 0,
@@ -719,6 +793,319 @@
         "content": "<p>This is Rocky, the kawaii cherry meow!</p><p>This is pretty difficult to explain in short with my babyish mind, but this will be expalained into a story sooner!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-52101-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 47,
+        "title": "My new Christmas gift!",
+        "sub": "AWWIE! IT'S A NEW BUNNY PLUSHIE!!!",
+        "date": "12/24/2024",
+        "artist": "BreezeCat",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_xmas_2024_bg.jpg"
+        ],
+        "content": "<p>My first babyish Christmas! Looks like here's a gift from someone, I'm going to open the gift box!</p><p>It's A NEW BUNNY PLUSHIE! I LOVE IT SO SO MUCH!🩷</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-52210-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 48,
+        "title": "First time trying kawaii clothes",
+        "sub": "The dreamy, childish clothes that I really love!",
+        "date": "1/23/2025",
+        "artist": "KnockyPo",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_jojifuku_nobg.png"
+        ],
+        "content": "<p>Ever since the beginning of my childish life, I really wished to get some childish, dreamy kawaii clothes.</p><p>And it turns out that jojifuku is something that suits me really much!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-52299-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 49,
+        "title": "Let's have a good nap!",
+        "sub": "(￣﹃￣)",
+        "date": "1/31/2025",
+        "artist": "saturn_nyan",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "good_nap.jpg"
+        ],
+        "content": "<p>That was a really great party with StellaNai and Sakura. We played together, ate together, slept together and had a good dream together...</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-52331-1-1.html",
+            "facebook": "https://www.facebook.com/tama48849"
+        },
+        "hide": false
+    },
+    {
+        "id": 50,
+        "title": "Kuparkuke Rocky",
+        "sub": "...fungus?",
+        "date": "4/21/2025",
+        "artist": "Chel",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_kuparkuke.png"
+        ],
+        "content": "<p>That was a normal afternoon when I was trying to arrive home using my teleport stone, but looks like there's something wrong with it and I was teleported to an entirely different place</p><p>In this place, everything is made of fungus, and I became one of them!</p><p>Check <a href='https://www.starheretic.com'>Cult of Galaxy!</a></p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-52763-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 51,
+        "title": "Birthday princess!",
+        "sub": "The kawaii cherry princess that never grows up!",
+        "date": "4/30/2025",
+        "artist": "breezecat",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_bday_2025_nobg.png"
+        ],
+        "content": "<p>-\"Are you a cherry or a princess?\"</p><br><p>-\"Uh... A cherry princess!\"</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-52829-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 52,
+        "title": "3 years of the little cherry meow!",
+        "sub": "...but where does the other 2 years come from?",
+        "date": "7/26/2025",
+        "artist": "KnockyPo",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_3rd_anni_nobg.PNG"
+        ],
+        "content": "<p>This time, I'm a very true cherry magician!</p><p>Want to feel my cherry magic and become cute? Then, I'll see you in the kindergarten!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53267-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 53,
+        "title": "Rocky in Docker",
+        "sub": "Those box-shaped clothes looks cool so I want to try that too!",
+        "date": "8/2/2025",
+        "artist": "KnockyPo",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_box.png"
+        ],
+        "content": "<p>Shanshan decided to appear in a new style, and created a new trend: her box-shaped clothes!</p><p>Everyone is wearing like her, and I want to be like that too! Isn't that cool?</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53317-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 54,
+        "title": "This is my favorite clothes!",
+        "sub": "If I'm free, I'll wear this!",
+        "date": "8/13/2025",
+        "artist": "saturn_nyan",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_jojifuku.jpg"
+        ],
+        "content": "<p>The clothes I discovered ever since I went to my new home!</p><p>It's so cute! And the size is like if it was designed for me!</p><p>Wearing this is so cute and comfortable, I want to wear this all time, when I don't need to wear the uniform!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53361-1-1.html",
+            "facebook": "https://www.facebook.com/tama48849"
+        },
+        "hide": false
+    },
+    {
+        "id": 55,
+        "title": "Cherry Yo-kai!",
+        "sub": "Who says monster can't be a defender?",
+        "date": "8/23/2025",
+        "artist": "CocoaCaa",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "yokai_rocky_nobg.png"
+        ],
+        "content": "<p>Ahahahaha! I am the Yo-kai Rocky the monster!</p><p>Although I'm a monster, I can still be the defender of the cherry forest!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53419-1-1.html",
+            "facebook": "https://www.facebook.com/cocoacaa"
+        },
+        "hide": true
+    },
+    {
+        "id": 56,
+        "title": "The cherry bee!",
+        "sub": "But I can't produce cherry honey",
+        "date": "9/20/2025",
+        "artist": "Izumikawa",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_beeos.png"
+        ],
+        "content": "<p>A new trend started by Izumikawa, the famous star of the Yah-Den Mainland.</p><p>Of course none of us can produce honey, but still it was so funny!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53553-1-1.html",
+            "facebook": "https://www.facebook.com/izumikawanya"
+        },
+        "hide": false
+    },
+    {
+        "id": 57,
+        "title": "At the marriage of Izumikawa!",
+        "sub": "I was witnessing some really important stuff!",
+        "date": "9/30/2025",
+        "artist": "Izumikawa",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_at_izumi_marriage.png"
+        ],
+        "content": "<p>I wasn't really paying attention to this, until they tell me that I can get snacks.</p><p>I've never seen her being so happy like that, along with her new... husband!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53628-1-1.html",
+            "facebook": "https://www.facebook.com/izumikawanya"
+        },
+        "hide": false
+    },
+    {
+        "id": 58,
+        "title": "In that spooky night",
+        "sub": "😈",
+        "date": "10/17/2025",
+        "artist": "Izumikawa",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_halloween_2025.png"
+        ],
+        "content": "<p>During that night, I, Izumikawa, and many other meows are telling spooky stories in the dark.</p><p>Actually, I was also scared by what I had told!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53696-1-1.html",
+            "facebook": "https://www.facebook.com/izumikawanya"
+        },
+        "hide": false
+    },
+    {
+        "id": 59,
+        "title": "Cherry Bovine",
+        "sub": "Moo",
+        "date": "11/13/2025",
+        "artist": "Chel",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_bovine_solo.png"
+        ],
+        "content": "<p>I was once accidentally caught for an experiment during a trip to that fungus land, and I became a small cow like this.</p><p>Everyone was amazed by my cuteness, but I don't want to be like this for all the time, so after that they managed to turn me back.</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53887-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 60,
+        "title": "The cherry hand puppet",
+        "sub": "A gift from Choushi",
+        "date": "11/22/2025",
+        "artist": "Choushi",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_handpuppet.png"
+        ],
+        "content": "<p>This is a gift from Choushi the hand puppet master.</p><p>Actually I was intended to use this for the halloween of this year!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-53955-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 61,
+        "title": "🩷",
+        "sub": "🩷",
+        "date": "12/24/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_heart.png"
+        ],
+        "content": "<h1>🩷</h1>",
+        "link": {
+
+        },
+        "hide": false
+    },
+    {
+        "id": 62,
+        "title": "Me and Hideki",
+        "sub": "He's my warm and fluffy adopter!",
+        "date": "1/4/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_hideki_milk_breed.png"
+        ],
+        "content": "<p>Me encanta bebo leche.<br>Me encanta ser alimentado por @Hideki 🩷</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-54288-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 63,
+        "title": "Fungal jojifuku cherry",
+        "sub": "A better fungal me!",
+        "date": "1/29/2026",
+        "artist": "Chel",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_kuparkuke_2.png"
+        ],
+        "content": "<p>That won't be my only trip to the fungus world, this time is my first time going there wearing my jojifuku!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-54454-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 64,
+        "title": "Inflated castle!",
+        "sub": "A super fun day at the amusement park!",
+        "date": "2/6/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "inflated_castle_01.png",
+            "inflated_castle_02.png"
+        ],
+        "content": "<p>Inflated castle is some kind of place we little kids really like to have fun in!</p><p>This time we are going with a \"big child\", he's so heavy that he bounced us into the air! That was fun!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-54527-1-1.html"
         },
         "hide": false
     }
