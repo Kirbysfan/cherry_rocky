@@ -1008,6 +1008,24 @@
     },
     {
         "id": 59,
+        "title": "Cherry snowball",
+        "sub": "A cherry meow flavour snowball!!!",
+        "date": "11/3/2025",
+        "artist": "Izumikawa",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_snowball.jpg"
+        ],
+        "content": "<p>It's winter again! TIme to make a snow man!</p><p>This time I want to make a very cherry-ish snowball for the body... Aw!</p><h1 style='word-wrap: break-word'>AAAAAAAAAAAAAAAAAAAAAAH! >A<</h1>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-54213-1-1.html",
+            "facebook": "https://www.facebook.com/izumikawanya"
+        },
+        "hide": false
+    },
+    {
+        "id": 60,
         "title": "Cherry Bovine",
         "sub": "Moo",
         "date": "11/13/2025",
@@ -1024,7 +1042,7 @@
         "hide": false
     },
     {
-        "id": 60,
+        "id": 61,
         "title": "The cherry hand puppet",
         "sub": "A gift from Choushi",
         "date": "11/22/2025",
@@ -1041,7 +1059,7 @@
         "hide": false
     },
     {
-        "id": 61,
+        "id": 62,
         "title": "🩷",
         "sub": "🩷",
         "date": "12/24/2026",
@@ -1052,13 +1070,11 @@
             "rocki_heart.png"
         ],
         "content": "<h1>🩷</h1>",
-        "link": {
-
-        },
+        "link": {},
         "hide": false
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "Me and Hideki",
         "sub": "He's my warm and fluffy adopter!",
         "date": "1/4/2026",
@@ -1075,7 +1091,7 @@
         "hide": false
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "Fungal jojifuku cherry",
         "sub": "A better fungal me!",
         "date": "1/29/2026",
@@ -1092,7 +1108,7 @@
         "hide": false
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "Inflated castle!",
         "sub": "A super fun day at the amusement park!",
         "date": "2/6/2026",
@@ -1104,6 +1120,24 @@
             "inflated_castle_02.png"
         ],
         "content": "<p>Inflated castle is some kind of place we little kids really like to have fun in!</p><p>This time we are going with a \"big child\", he's so heavy that he bounced us into the air! That was fun!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-54527-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 66,
+        "title": "The kawaii cherry meow that never grows up!",
+        "sub": "Cherry-ish birthday, with a super big cake!",
+        "date": "4/30/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_bday_2026.png",
+            "rocki_bday_2026_nocake.png"
+        ],
+        "content": "<p>It's my another birthday! Time to enjoy a really big cake with my adopter!</p><p>We are going to eat really a lot!</p>",
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-54527-1-1.html"
         },
