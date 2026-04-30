@@ -1,4 +1,4 @@
-import { _ as _export_sfc, c as createElementBlock, b as createBaseVNode, t as toDisplayString, l as withDirectives, n as normalizeClass, a as createVNode, w as withCtx, d as createTextVNode, i as createCommentVNode, j as watch, m as resolveDirective, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, F as Fragment, h as renderList, p as createBlock } from "./index-DeYcqt7P.js";
+import { _ as _export_sfc, c as createElementBlock, b as createBaseVNode, t as toDisplayString, l as withDirectives, n as normalizeClass, a as createVNode, w as withCtx, d as createTextVNode, i as createCommentVNode, j as watch, m as resolveDirective, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, F as Fragment, h as renderList, p as createBlock } from "./index-B7q7Pdgn.js";
 const _sfc_main = {
   name: "Gallery-detail",
   props: {},
@@ -177,7 +177,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   ]);
 }
-const galleryDetail = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-aae98fc9"]]);
+const galleryDetail = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-461603bb"]]);
 export {
   galleryDetail as default
 };
