@@ -1,4 +1,4 @@
-import { _ as _export_sfc, c as createElementBlock, a as createVNode, f as createStaticVNode, b as createBaseVNode, i as createCommentVNode, n as normalizeClass, F as Fragment, h as renderList, j as watch, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, e as _imports_2, d as createTextVNode, t as toDisplayString } from "./index-Cm2emc_N.js";
+import { _ as _export_sfc, c as createElementBlock, a as createVNode, f as createStaticVNode, b as createBaseVNode, i as createCommentVNode, n as normalizeClass, F as Fragment, h as renderList, j as watch, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, e as _imports_2, d as createTextVNode, t as toDisplayString } from "./index-DhMYpDU-.js";
 import { _ as _imports_0, a as _imports_1 } from "./stub_p-CLMac4Sb.js";
 const _imports_3 = "" + new URL("../gallery/thumbs/rocki_formal.jpg", import.meta.url).href;
 const _sfc_main = {

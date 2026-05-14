@@ -1,4 +1,4 @@
-import { _ as _export_sfc, c as createElementBlock, f as createStaticVNode, o as openBlock } from "./index-Cm2emc_N.js";
+import { _ as _export_sfc, c as createElementBlock, f as createStaticVNode, o as openBlock } from "./index-DhMYpDU-.js";
 const _imports_0 = "" + new URL("../favicon.png", import.meta.url).href;
 const _sfc_main = {
   setup() {

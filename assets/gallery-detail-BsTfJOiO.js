@@ -1,4 +1,4 @@
-import { _ as _export_sfc, c as createElementBlock, b as createBaseVNode, t as toDisplayString, l as withDirectives, n as normalizeClass, a as createVNode, w as withCtx, d as createTextVNode, i as createCommentVNode, j as watch, m as resolveDirective, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, F as Fragment, h as renderList, p as createBlock } from "./index-Cm2emc_N.js";
+import { _ as _export_sfc, c as createElementBlock, b as createBaseVNode, t as toDisplayString, l as withDirectives, n as normalizeClass, a as createVNode, w as withCtx, d as createTextVNode, i as createCommentVNode, j as watch, m as resolveDirective, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, F as Fragment, h as renderList, p as createBlock } from "./index-DhMYpDU-.js";
 const _sfc_main = {
   name: "Gallery-detail",
   props: {},

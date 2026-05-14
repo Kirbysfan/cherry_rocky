@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./index-DXKPbbwS.js","./index-BBdCf6Hy.css","./about-CNZZZTpS.js","./stub_p-CLMac4Sb.js","./about-a9SBIAda.css","./stories-5qUWll4l.js","./stories-BKfknGJd.css","./story-BJnXUIQl.js","./story-CIn9XFMj.css","./fun-stuffs-DIFnWIpd.js","./fun-stuffs-G3ttiS_M.css","./gallery-layout-kD5iA0wc.js","./gallery-layout-C_79ySln.css","./gallery-detail-C1jhm6C6.js","./gallery-detail-Up9NGFU9.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./index-xdrscsib.js","./index-BBdCf6Hy.css","./about-BxXu6Seu.js","./stub_p-CLMac4Sb.js","./about-a9SBIAda.css","./stories-6sEQLS_Z.js","./stories-BKfknGJd.css","./story-WRbtPBnX.js","./story-CIn9XFMj.css","./fun-stuffs-DNfG4xHu.js","./fun-stuffs-G3ttiS_M.css","./gallery-layout-DgDNhCDT.js","./gallery-layout-C_79ySln.css","./gallery-detail-BsTfJOiO.js","./gallery-detail-Up9NGFU9.css"])))=>i.map(i=>d[i]);
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) {
@@ -9713,6 +9713,10 @@ const _hoisted_11$2 = {
   class: "material-symbols-outlined"
 };
 const _hoisted_12$2 = { class: "nav_list" };
+const _hoisted_13$2 = {
+  key: 2,
+  class: "nav_gap"
+};
 function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock(Fragment, null, [
     $setup.route.name !== "site-closed" ? (openBlock(), createElementBlock("div", _hoisted_1$1f, [
@@ -9991,10 +9995,10 @@ function _sfc_render$m(_ctx, _cache, $props, $setup, $data, $options) {
         ], -1))
       ], 2)
     ])) : createCommentVNode("", true),
-    _cache[33] || (_cache[33] = createBaseVNode("div", { class: "nav_gap" }, null, -1))
+    $setup.route.name !== "site-closed" ? (openBlock(), createElementBlock("div", _hoisted_13$2)) : createCommentVNode("", true)
   ], 64);
 }
-const navbarVue = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$m], ["__scopeId", "data-v-f694c727"]]);
+const navbarVue = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$m], ["__scopeId", "data-v-93f52af4"]]);
 const __default__ = {
   setup() {
   },
@@ -10112,12 +10116,12 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => __vitePreload(() => import("./index-DXKPbbwS.js"), true ? __vite__mapDeps([0,1]) : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./index-xdrscsib.js"), true ? __vite__mapDeps([0,1]) : void 0, import.meta.url)
     },
     {
       path: "/index",
       name: "index",
-      component: () => __vitePreload(() => import("./index-DXKPbbwS.js"), true ? __vite__mapDeps([0,1]) : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./index-xdrscsib.js"), true ? __vite__mapDeps([0,1]) : void 0, import.meta.url)
     },
     {
       path: "/about",
@@ -10125,7 +10129,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => __vitePreload(() => import("./about-CNZZZTpS.js"), true ? __vite__mapDeps([2,3,4]) : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./about-BxXu6Seu.js"), true ? __vite__mapDeps([2,3,4]) : void 0, import.meta.url)
     },
     {
       path: "/stories",
@@ -10133,7 +10137,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => __vitePreload(() => import("./stories-5qUWll4l.js"), true ? __vite__mapDeps([5,3,6]) : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./stories-6sEQLS_Z.js"), true ? __vite__mapDeps([5,3,6]) : void 0, import.meta.url)
     },
     {
       path: "/story",
@@ -10141,7 +10145,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => __vitePreload(() => import("./story-BJnXUIQl.js"), true ? __vite__mapDeps([7,8]) : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./story-WRbtPBnX.js"), true ? __vite__mapDeps([7,8]) : void 0, import.meta.url)
     },
     {
       path: "/fun-stuffs",
@@ -10149,7 +10153,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => __vitePreload(() => import("./fun-stuffs-DIFnWIpd.js"), true ? __vite__mapDeps([9,3,10]) : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./fun-stuffs-DNfG4xHu.js"), true ? __vite__mapDeps([9,3,10]) : void 0, import.meta.url)
     },
     {
       path: "/sorry",
@@ -10157,12 +10161,12 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => __vitePreload(() => import("./site-closed-BrZzeaWw.js"), true ? [] : void 0, import.meta.url)
+      component: () => __vitePreload(() => import("./site-closed-BJzFfdpS.js"), true ? [] : void 0, import.meta.url)
     },
     {
       path: "/gallery-list",
       name: "gallery-list",
-      component: () => __vitePreload(() => import("./gallery-layout-kD5iA0wc.js"), true ? __vite__mapDeps([11,3,12]) : void 0, import.meta.url),
+      component: () => __vitePreload(() => import("./gallery-layout-DgDNhCDT.js"), true ? __vite__mapDeps([11,3,12]) : void 0, import.meta.url),
       children: [
         // {
         //   path: '/gallery',
@@ -10172,7 +10176,7 @@ const router = createRouter({
         {
           path: "/gallery-detail",
           name: "gallery-detail",
-          component: () => __vitePreload(() => import("./gallery-detail-C1jhm6C6.js"), true ? __vite__mapDeps([13,14]) : void 0, import.meta.url)
+          component: () => __vitePreload(() => import("./gallery-detail-BsTfJOiO.js"), true ? __vite__mapDeps([13,14]) : void 0, import.meta.url)
         }
       ]
     },
