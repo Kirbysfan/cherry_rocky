@@ -968,7 +968,7 @@
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-53553-1-1.html",
             "facebook": "https://www.facebook.com/izumikawanya"
         },
-        "hide": false
+        "hide": true
     },
     {
         "id": 57,
@@ -986,7 +986,7 @@
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-53628-1-1.html",
             "facebook": "https://www.facebook.com/izumikawanya"
         },
-        "hide": false
+        "hide": true
     },
     {
         "id": 58,
@@ -1004,7 +1004,7 @@
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-53696-1-1.html",
             "facebook": "https://www.facebook.com/izumikawanya"
         },
-        "hide": false
+        "hide": true
     },
     {
         "id": 59,
@@ -1022,7 +1022,7 @@
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-54213-1-1.html",
             "facebook": "https://www.facebook.com/izumikawanya"
         },
-        "hide": false
+        "hide": true
     },
     {
         "id": 60,
@@ -1088,7 +1088,7 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-54288-1-1.html"
         },
-        "hide": false
+        "hide": true
     },
     {
         "id": 64,
@@ -1123,7 +1123,7 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-54527-1-1.html"
         },
-        "hide": false
+        "hide": true
     },
     {
         "id": 66,
@@ -1141,6 +1141,26 @@
         "link": {
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-54527-1-1.html"
         },
+        "hide": true
+    },
+    {
+        "id": 67,
+        "title": "A huge thank to you!",
+        "sub": "Thank you for your birthday blessings!",
+        "date": "5/2/2026",
+        "artist": "Various artists",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "bday_2026_izumi.jpg",
+            "bday_2026_owo.png",
+            "bday_2026_redhide.png",
+            "bday_2026_bian.png",
+            "bday_2026_yk.jpg",
+            "bday_2026_dorilin.png"
+        ],
+        "content": "<p>Thank you for your birthday blessings! I won't forget them!</p><p>Credits to these artists (In the order of art being shown)<br></p><ol><li>Izumikawa</li><li>憨天 owo</li><li>赤焰</li><li>毕安<br></li><li>艺空</li><li>Dorilin<br></li></ol>",
+        "link": {},
         "hide": false
     }
 ]

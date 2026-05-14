@@ -1,5 +1,5 @@
 import { _ as _imports_0, a as _imports_1 } from "./stub_p-CLMac4Sb.js";
-import { _ as _export_sfc, c as createElementBlock, f as createStaticVNode, b as createBaseVNode, F as Fragment, h as renderList, o as openBlock, e as _imports_2, t as toDisplayString } from "./index-B7q7Pdgn.js";
+import { _ as _export_sfc, c as createElementBlock, f as createStaticVNode, b as createBaseVNode, F as Fragment, h as renderList, o as openBlock, e as _imports_2, t as toDisplayString } from "./index-Cm2emc_N.js";
 const _sfc_main = {
   name: "Stories",
   props: {},
@@ -50,7 +50,6 @@ const _sfc_main = {
     }
   },
   created() {
-    this.getStories();
     this.getDownloadable();
   }
 };
@@ -84,7 +83,7 @@ const _hoisted_21 = ["onClick"];
 const _hoisted_22 = ["value"];
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1, [
-    _cache[5] || (_cache[5] = createStaticVNode('<div class="banner" data-v-4bbd3b71><img class="d-none d-md-block position-relative banner_stub" src="' + _imports_0 + '" alt="" data-v-4bbd3b71><img class="d-block d-md-none position-relative banner_stub_mobile" src="' + _imports_1 + '" alt="" data-v-4bbd3b71><div class="banner_text" data-v-4bbd3b71><div data-v-4bbd3b71><div class="banner_h1" data-v-4bbd3b71><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-4bbd3b71><h1 class="mx-2" data-v-4bbd3b71>Fun stuffs</h1><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-4bbd3b71></div><p data-v-4bbd3b71>Interesting things I&#39;ve made!</p></div></div></div>', 1)),
+    _cache[5] || (_cache[5] = createStaticVNode('<div class="banner" data-v-b1aed085><img class="d-none d-md-block position-relative banner_stub" src="' + _imports_0 + '" alt="" data-v-b1aed085><img class="d-block d-md-none position-relative banner_stub_mobile" src="' + _imports_1 + '" alt="" data-v-b1aed085><div class="banner_text" data-v-b1aed085><div data-v-b1aed085><div class="banner_h1" data-v-b1aed085><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-b1aed085><h1 class="mx-2" data-v-b1aed085>Fun stuffs</h1><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-b1aed085></div><p data-v-b1aed085>Interesting things I&#39;ve made!</p></div></div></div>', 1)),
     createBaseVNode("div", _hoisted_2, [
       createBaseVNode("div", _hoisted_3, [
         createBaseVNode("div", _hoisted_4, [
@@ -195,7 +194,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-const funStuffs = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-4bbd3b71"]]);
+const funStuffs = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-b1aed085"]]);
 export {
   funStuffs as default
 };

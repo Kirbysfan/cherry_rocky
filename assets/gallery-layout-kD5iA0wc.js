@@ -1,4 +1,4 @@
-import { _ as _export_sfc, c as createElementBlock, a as createVNode, f as createStaticVNode, b as createBaseVNode, i as createCommentVNode, n as normalizeClass, F as Fragment, h as renderList, j as watch, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, e as _imports_2, d as createTextVNode, t as toDisplayString } from "./index-B7q7Pdgn.js";
+import { _ as _export_sfc, c as createElementBlock, a as createVNode, f as createStaticVNode, b as createBaseVNode, i as createCommentVNode, n as normalizeClass, F as Fragment, h as renderList, j as watch, r as resolveComponent, u as useRoute, k as useRouter, o as openBlock, e as _imports_2, d as createTextVNode, t as toDisplayString } from "./index-Cm2emc_N.js";
 import { _ as _imports_0, a as _imports_1 } from "./stub_p-CLMac4Sb.js";
 const _imports_3 = "" + new URL("../gallery/thumbs/rocki_formal.jpg", import.meta.url).href;
 const _sfc_main = {
@@ -126,19 +126,19 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     class: normalizeClass(["gallery-layout", $setup.route.name == "gallery-detail" ? "mobile_noscroll" : ""])
   }, [
     createVNode(_component_router_view),
-    _cache[7] || (_cache[7] = createStaticVNode('<div class="banner" data-v-839c2d1b><img class="d-none d-md-block position-relative banner_stub" src="' + _imports_0 + '" alt="" data-v-839c2d1b><img class="d-block d-md-none position-relative banner_stub_mobile" src="' + _imports_1 + '" alt="" data-v-839c2d1b><div class="banner_text" data-v-839c2d1b><div data-v-839c2d1b><div class="banner_h1" data-v-839c2d1b><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-839c2d1b><h1 class="mx-2" data-v-839c2d1b>Gallery</h1><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-839c2d1b></div><p data-v-839c2d1b>My memory in Yah-Den Mainland!</p></div></div></div>', 1)),
+    _cache[7] || (_cache[7] = createStaticVNode('<div class="banner" data-v-a4c79c2d><img class="d-none d-md-block position-relative banner_stub" src="' + _imports_0 + '" alt="" data-v-a4c79c2d><img class="d-block d-md-none position-relative banner_stub_mobile" src="' + _imports_1 + '" alt="" data-v-a4c79c2d><div class="banner_text" data-v-a4c79c2d><div data-v-a4c79c2d><div class="banner_h1" data-v-a4c79c2d><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-a4c79c2d><h1 class="mx-2" data-v-a4c79c2d>Gallery</h1><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-a4c79c2d></div><p data-v-a4c79c2d>My memory in Yah-Den Mainland!</p></div></div></div>', 1)),
     createBaseVNode("div", _hoisted_1, [
       createBaseVNode("div", _hoisted_2, [
         createBaseVNode("div", _hoisted_3, [
           !$data.resumeMode ? (openBlock(), createElementBlock("div", _hoisted_4, _cache[3] || (_cache[3] = [
-            createStaticVNode('<div class="card-header bg-warning d-flex align-items-center text-dark" data-v-839c2d1b><span class="material-symbols-outlined" style="font-size:24px !important;" data-v-839c2d1b> warning </span>   Something is missing? </div><div class="card-body" data-v-839c2d1b><h4 class="card-title" data-v-839c2d1b>This is expected, no worries.</h4><p class="card-text" data-v-839c2d1b> Because of something that shouldn&#39;t happen is happening in the earth, some of the contents that used to be there is no longer suitable to be shown to those angry earthlings.<br data-v-839c2d1b> They are now removed temporarily for safety reason, you cannot access them by using URL params too. </p></div><div class="card-footer text-muted" data-v-839c2d1b> Tribun: I wish that mad lady can stop creating chaos as soon as possible, cannot understand why so many earthlings wish things become even worse... </div>', 3)
+            createStaticVNode('<div class="card-header bg-warning d-flex align-items-center text-dark" data-v-a4c79c2d><span class="material-symbols-outlined" style="font-size:24px !important;" data-v-a4c79c2d> warning </span>   Something is missing? </div><div class="card-body" data-v-a4c79c2d><h4 class="card-title" data-v-a4c79c2d>This is expected, no worries.</h4><p class="card-text" data-v-a4c79c2d> Because of something that shouldn&#39;t happen is happening in the earth, some of the contents that used to be there is no longer suitable to be shown to those angry earthlings.<br data-v-a4c79c2d> They are now removed temporarily for safety reason, you cannot access them by using URL params too. </p></div><div class="card-footer text-muted" data-v-a4c79c2d> Tribun: I wish that mad lady can stop creating chaos as soon as possible, cannot understand why so many earthlings wish things become even worse... </div>', 3)
           ]))) : createCommentVNode("", true),
           createBaseVNode("div", _hoisted_5, [
             createBaseVNode("div", {
               onClick: _cache[0] || (_cache[0] = ($event) => $options.toGallery({ id: 41 })),
               class: "formal_sona_sect_inner d-flex align-items-stretch"
             }, _cache[4] || (_cache[4] = [
-              createStaticVNode('<div class="overflow-hidden thumb-outer flex-shrink-0" data-v-839c2d1b><img class="thumb" src="' + _imports_3 + '" alt="" data-v-839c2d1b></div><div class="p-4" data-v-839c2d1b><h3 class="m-0" data-v-839c2d1b>The formal design of DNAxCAT Rocky the cherry meow!🍒</h3><p class="mb-2" data-v-839c2d1b> From now on DNAxCAT Rocky will be the representative of cherry that is all about SUPER kawaii and childish stuffs! </p><h5 data-v-839c2d1b>Click HERE to check the formal sona info!</h5></div>', 2)
+              createStaticVNode('<div class="overflow-hidden thumb-outer flex-shrink-0" data-v-a4c79c2d><img class="thumb" src="' + _imports_3 + '" alt="" data-v-a4c79c2d></div><div class="p-4" data-v-a4c79c2d><h3 class="m-0" data-v-a4c79c2d>The formal design of DNAxCAT Rocky the cherry meow!🍒</h3><p class="mb-2" data-v-a4c79c2d> From now on DNAxCAT Rocky will be the representative of cherry that is all about SUPER kawaii and childish stuffs! </p><h5 data-v-a4c79c2d>Click HERE to check the formal sona info!</h5></div>', 2)
             ]))
           ]),
           createBaseVNode("div", _hoisted_6, [
@@ -216,7 +216,7 @@ ${item.sub}`
     ])
   ], 2);
 }
-const galleryLayout = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-839c2d1b"]]);
+const galleryLayout = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-a4c79c2d"]]);
 export {
   galleryLayout as default
 };
