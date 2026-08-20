@@ -34,13 +34,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body user-select-auto">
-                    <span class="h3">Bless to you!</span><br>
-                    What a cute kitty couples!<br>
-                    Wish you can be together forever!<br>
+<!--                    <span class="h3">Bless to you!</span><br>-->
+<!--                    What a cute kitty couples!<br>-->
+<!--                    Wish you can be together forever!<br>-->
+                    <span>2025/10/2 - 2026/5/13</span><br>
+                    <span>The memorable past memory.</span><br>
                     Artwork by Kirbysfan<br>
-                    BGM: rryam.mid - fether / こうもりさん, available <a href="https://fether.exblog.jp/#Other">here</a><br>
-                    This is a dump of the midi above played using this soundfont: <a
-                        href="https://emu-france.com/emulateurs/311-/313-/4232-/">Here</a><br>
+                    BGM: Stages of Grief - Kevin MacLeod<br>
+                    Download from <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100408&Search=Search">Here</a><br>
+<!--                    BGM: rryam.mid - fether / こうもりさん, available <a href="https://fether.exblog.jp/#Other">here</a><br>-->
+<!--                    This is a dump of the midi above played using this soundfont: <a-->
+<!--                        href="https://emu-france.com/emulateurs/311-/313-/4232-/">Here</a><br>-->
                     Part of the effects are based on ideas from codepen.io
                 </div>
                 <div class="modal-footer">
@@ -72,7 +76,8 @@
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-body">
-                BGM: rryam.mid - fether / こうもりさん
+<!--                BGM: rryam.mid - fether / こうもりさん-->
+                BGM: Stages of Grief - Kevin MacLeod
             </div>
         </div>
     </div>
@@ -83,8 +88,8 @@
             <div class="circle-3"></div>
             <div class="circle-4"></div>
             <h1 class="title">
-                Congratulations!<br>
-                <span>2025/10/2</span>
+<!--                Congratulations!<br>-->
+<!--                <span>2025/10/2</span>-->
             </h1>
             <div class="izumi_and_zhima">
                 <div class="izumi_and_zhima_inner">
@@ -179,7 +184,7 @@
 <script src="assets/jquery.min.js"></script>
 <script>
     //    return false;
-    const bgm = new Audio("assets/rryam.ogg");
+    const bgm = new Audio("assets/grief.mp3");
     const toastLiveExample = document.getElementById('liveToast')
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
     function doMusicControl() {
