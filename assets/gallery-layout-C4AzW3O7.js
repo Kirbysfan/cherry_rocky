@@ -1,4 +1,4 @@
-import { _ as _export_sfc, k as watch, l as createBlock, w as withCtx, u as useRoute, m as useRouter, r as resolveComponent, p as resolveDirective, o as openBlock, b as createBaseVNode, n as normalizeClass, t as toDisplayString, j as withDirectives, c as createElementBlock, a as createVNode, F as Fragment, h as renderList, d as createTextVNode, i as createCommentVNode, f as createStaticVNode, e as _imports_2 } from "./index-B4asqPBB.js";
+import { _ as _export_sfc, k as watch, l as createBlock, w as withCtx, u as useRoute, m as useRouter, r as resolveComponent, p as resolveDirective, o as openBlock, b as createBaseVNode, n as normalizeClass, t as toDisplayString, j as withDirectives, c as createElementBlock, a as createVNode, F as Fragment, h as renderList, d as createTextVNode, i as createCommentVNode, f as createStaticVNode, e as _imports_2 } from "./index-B_ONfjOx.js";
 import { _ as _imports_0, a as _imports_1 } from "./stub_p-CLMac4Sb.js";
 const _sfc_main$1 = {
   name: "Gallery-detail",
@@ -248,7 +248,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }, 8, ["before-close", "lock-scroll", "model-value"]);
 }
-const gallery_dialog = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-8c3e80df"]]);
+const gallery_dialog = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-24562e41"]]);
 const _imports_3 = "" + new URL("../gallery/thumbs/rocki_formal.jpg", import.meta.url).href;
 const _sfc_main = {
   name: "Gallery-layout",
