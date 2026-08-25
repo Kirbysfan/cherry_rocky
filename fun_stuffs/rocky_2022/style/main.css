@@ -1,0 +1,137 @@
+@font-face {
+    font-family: ProductSans;
+    src: url(../ProductSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: ProductSansBold;
+    src: url(../ProductSans-Bold.ttf);
+}
+
+.body{
+    background-color: #80D8FF;
+    display:flex;
+}
+
+p, a, h3, h4, h2{
+    font-family: ProductSans;
+}
+
+.hf{
+    background-color: #B3E5FC;
+    border-radius: 15px;
+    padding: 0 5% 0 5%;
+    clear: right;
+}
+
+.content{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.welcome{
+    width: fit-content;
+    max-width: 100%;
+}
+
+.p1-1{
+    width: 32%;
+}
+
+.p1-1d{
+    font-size: small;
+    margin-bottom: 16px;
+}
+
+.caution{
+    clear: right;
+}
+
+.box0{
+    background-color: #40C4FF;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 2px 0 2px 0;
+}
+
+.box1{
+    height: 320px;
+    max-width: 720px;
+    justify-content: center;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.hoshi_menu{
+    width: 32px
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    max-width: 720px;
+    justify-content: space-around;
+    background-color: #40C4FF;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 24px 0 24px 0;
+}
+
+.box3{
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    padding-left: 24px;
+    font-family: ProductSansBold;
+}
+
+.text{
+    text-align: left;
+    margin: 24px 24px 24px 24px;
+}
+.a_menu{
+    color: #00B0FF;
+}
+
+.textbox{
+    align-items: flex-start;
+}
+
+.rocky_scale{
+    width: 64%;
+}
+
+.margin-banner{
+    margin-left: 24px;
+}
+
+.greeting{
+    font-style: ProductSansBold;
+    font-size: 52px;
+    color: #0277BD;
+}
+.correct{
+    flex-direction: column;
+    min-height: fit-content;
+}
+
+.gap{
+    font-size: 16px;
+}
+
+.greeting1{
+    font-size: 16px;
+    color: #0091EA;
+}
+
+.greeting2{
+    font-size: 24px;
+    color: #0091EA;
+}
+
+.hideit{
+    font-size: 8px;
+    color: gray;
+}

@@ -3,12 +3,28 @@
         "id": 1,
         "title": "Spinning Rocky",
         "route": "/fun_stuffs/rotate_rocky/rotate_rocky.html",
-        "sub": "<em>There's no need to be upset</em>"
+        "sub": "<em>There's no need to be upset</em>",
+        "is2022": ""
     },
     {
         "id": 2,
-        "title": "Marriage of Izumikawa",
+        "title": "Izumikawa and Dondon",
         "route": "/fun_stuffs/izumi_marriage_website/index.html",
-        "sub": "Bless to the cutest Vtuber in the Yah-Den Mainland!"
+        "sub": "",
+        "is2022": ""
+    },
+    {
+        "id": 3,
+        "title": "The beginning of the site",
+        "route": "/fun_stuffs/rocky_2022/index.html",
+        "sub": "You found the entrance to the site during August 2022!",
+        "is2022": "1"
+    },
+    {
+        "id": 4,
+        "title": "Pat the cherry kitty",
+        "route": "/fun_stuffs/patpat/index.html",
+        "sub": "Please pat with care",
+        "is2022": ""
     }
 ]

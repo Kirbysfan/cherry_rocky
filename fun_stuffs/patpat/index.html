@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry kitty</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+<div id="playBg" style="display: flex; align-items: center;justify-content: center;position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(255,255,255,0.6); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px)">
+    <button class="btn btn-primary btn-lg" id="playBtn">Play!</button>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: calc(100vh); padding:0 24px; box-sizing: border-box">
+    <canvas id="patpat" style="width: 100%; max-width: 384px; cursor: grab; margin-top: 24px" draggable="false"></canvas>
+    <p id="message">Drag your mouse or finger on DNAxCAT Rocky!</p>
+    <div>
+        <button class="btn btn-primary" style="margin-bottom: 24px" data-bs-toggle="modal" data-bs-target="#exampleModal">About</button>
+        <button class="btn btn-primary" style="margin-bottom: 24px" id="btn">Go back</button>
+    </div>
+
+</div>
+<div style="z-index: 2048;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">About</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body user-select-auto">
+                A silly little demo of patting DNAxCAT Rocky<br>
+                Artwork by Nokta<br>
+                BGM: Stock Market - Mr.Weebl<br>
+                The following js library was used for implementing this stuff:<br>
+                omggif<br>
+                gifler<br>
+                With help and assistance from Gemini and Dou Bao.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<!--<script src="jquery.min.js"></script>-->
+<script src="omggif.min.js"></script>
+<script src="gifler.min.js"></script>
+<script>
+    let mobile1stplay = false;
+    const bgm = new Audio("maxwell.ogg");
+    function warmUpAudio() {
+        // Play immediately to satisfy the browser's interaction rule
+        bgm.play()
+            .then(() => {
+                // Pause it instantly so the user doesn't hear it yet
+                bgm.pause();
+                bgm.currentTime = 0; // Reset to start
+                console.log('Audio element primed for interactive playback');
+
+                // Remove listeners
+                document.removeEventListener('click', warmUpAudio);
+                document.removeEventListener('touchstart', warmUpAudio);
+            })
+            .catch(err => console.log('Wait for explicit user tap...', err));
+            document.getElementById("playBg").style.display = 'none';
+    }
+
+    document.getElementById("playBtn").addEventListener('click', warmUpAudio);
+    document.getElementById("playBtn").addEventListener('touchstart', warmUpAudio);
+
+    bgm.loop = true;
+    // bgm.preservesPitch = false;
+    let playstat = false;
+    document.getElementById('btn').onclick= () => {
+        history.back();
+    }
+    const canvas = document.getElementById('patpat');
+    let moveTimeout = null;
+    const ctx = canvas.getContext('2d');
+    const msg = document.getElementById('message')
+    // CSS setup for responsive scaling/zooming
+    canvas.style.touchAction = 'none';
+    canvas.style.width = '100%';
+    canvas.style.height = 'auto';
+
+    let isDragging = false;
+    let lastPos = { x: 0, y: 0 };
+    let currentFrameIndex = 0;
+    let pendingFrames = 0;
+    let distanceBuffer = 0;
+
+    const frames = [];
+    let rafId = null;
+
+    // Load and parse raw GIF byte array
+    fetch('patpat.gif')
+        .then(res => res.arrayBuffer())
+        .then(buffer => {
+            const byteArray = new Uint8Array(buffer);
+            const reader = new GifReader(byteArray);
+
+            // Set canvas resolution to intrinsic GIF dimensions
+            canvas.width = reader.width;
+            canvas.height = reader.height;
+
+            // Helper canvas to composite disposal modes & transparent layers
+            const compositeCanvas = document.createElement('canvas');
+            compositeCanvas.width = reader.width;
+            compositeCanvas.height = reader.height;
+            const compCtx = compositeCanvas.getContext('2d');
+
+            let prevImageData = null;
+
+            // Decode ALL frames in sequential order
+            for (let i = 0; i < reader.numFrames(); i++) {
+                const frameInfo = reader.frameInfo(i);
+                const frameImageData = compCtx.createImageData(reader.width, reader.height);
+
+                // Decode raw RGBA pixels into frameImageData
+                reader.decodeAndBlitFrameRGBA(i, frameImageData.data);
+
+                // Save previous state for disposal handling
+                if (frameInfo.disposal === 2) { // Restore to background
+                    compCtx.clearRect(frameInfo.x, frameInfo.y, frameInfo.width, frameInfo.height);
+                } else if (frameInfo.disposal === 3 && prevImageData) { // Restore to previous frame
+                    compCtx.putImageData(prevImageData, 0, 0);
+                }
+
+                // Draw current frame overlay onto composite canvas
+                const tempCanvas = document.createElement('canvas');
+                tempCanvas.width = reader.width;
+                tempCanvas.height = reader.height;
+                tempCanvas.getContext('2d').putImageData(frameImageData, 0, 0);
+
+                compCtx.drawImage(tempCanvas, 0, 0);
+
+                // Clone final composite frame to offscreen canvas
+                const frameCanvas = document.createElement('canvas');
+                frameCanvas.width = reader.width;
+                frameCanvas.height = reader.height;
+                frameCanvas.getContext('2d').drawImage(compositeCanvas, 0, 0);
+
+                frames.push(frameCanvas);
+                prevImageData = compCtx.getImageData(0, 0, reader.width, reader.height);
+            }
+
+            // Freeze on 1st frame (index 0) immediately upon loading
+            renderFrame(0);
+        });
+
+    // Render helper - Draws frame cleanly without trails or white flashes
+    function renderFrame(index) {
+        if (!frames[index]) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(frames[index], 0, 0);
+    }
+
+    // Render Loop: Drains frame queue 1-by-1 sequentially (no skipped frames)
+    function updateLoop() {
+        if (!isDragging) return;
+
+        if (pendingFrames > 0) {
+            currentFrameIndex = (currentFrameIndex + 1) % frames.length;
+            renderFrame(currentFrameIndex);
+            pendingFrames--;
+        }
+
+        rafId = requestAnimationFrame(updateLoop);
+    }
+
+    // Track drag distance to calculate frame queueing
+    function handleMove(clientX, clientY) {
+        if (!isDragging || frames.length === 0) return;
+
+        const dx = clientX - lastPos.x;
+        const dy = clientY - lastPos.y;
+        const distance = Math.hypot(dx, dy);
+        if (distance > 0){
+            msg.innerText = "UwU"
+
+            if (playstat !== true){
+                playstat = true;
+                bgm.play()
+            }
+            bgm.playbackRate = distance / 7 >= 4.0? 4.0 : distance / 7 <= 0.5? 0.5 : distance / 7
+            clearTimeout(moveTimeout);
+            moveTimeout = setTimeout(() => {
+                if (isDragging) {
+                    msg.innerText ='Now move your mouse or finger...';
+                }
+                bgm.pause();
+                playstat = false;
+            }, 100);
+        }
+        distanceBuffer += distance;
+        // SENSITIVITY: Pixels of drag distance required per frame step.
+        // Tune this number (e.g. 8 to 15) for faster or slower playback sensitivity.
+        const pixelsPerFrame = 40;
+
+        if (distanceBuffer >= pixelsPerFrame) {
+            const stepsToAdd = Math.floor(distanceBuffer / pixelsPerFrame);
+            distanceBuffer %= pixelsPerFrame;
+
+            pendingFrames = Math.min(pendingFrames + stepsToAdd, frames.length);
+
+        }
+        lastPos = { x: clientX, y: clientY };
+    }
+
+    // --- Drag Handlers ---
+    function startDrag(clientX, clientY) {
+        if (frames.length === 0) return; // Wait until decoded
+        isDragging = true;
+        canvas.style.cursor = "grabbing"
+        distanceBuffer = 0;
+        pendingFrames = 0;
+        lastPos = { x: clientX, y: clientY };
+        msg.innerText = "Now move your mouse or finger..."
+        cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(updateLoop);
+    }
+
+    function stopDrag() {
+        isDragging = false;
+        canvas.style.cursor = "grab"
+        distanceBuffer = 0;
+        pendingFrames = 0;
+        cancelAnimationFrame(rafId);
+        clearTimeout(moveTimeout);
+        bgm.pause();
+        playstat = false;
+        msg.innerText = "Drag your mouse or finger on DNAxCAT Rocky!"
+    }
+
+    // --- Mouse Listeners ---
+    canvas.addEventListener('mousedown', (e) => startDrag(e.clientX, e.clientY));
+    canvas.addEventListener('mousemove', (e) => {
+        if (e.buttons === 1) handleMove(e.clientX, e.clientY);
+    });
+    window.addEventListener('mouseup', stopDrag);
+    // --- Touch Listeners ---
+    canvas.addEventListener('touchstart', (e) => {
+        bgm.play();
+        bgm.pause();
+        e.preventDefault();
+        const touch = e.touches[0];
+        startDrag(touch.clientX, touch.clientY);
+    }, { passive: false });
+
+    canvas.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        handleMove(touch.clientX, touch.clientY);
+    }, { passive: false });
+
+    window.addEventListener('touchend', stopDrag);
+    window.addEventListener('touchcancel', stopDrag);
+</script>
+</html>

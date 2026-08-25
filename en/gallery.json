@@ -497,7 +497,7 @@
     {
         "id": 30,
         "title": "Sand castle",
-        "sub": "That was fun!",
+        "sub": "The memorable past memory",
         "date": "7/20/2023",
         "artist": "糖悠悠",
         "timeline": 1,
@@ -587,7 +587,7 @@
     {
         "id": 35,
         "title": "Giant soda",
-        "sub": "Hideki's favorite!",
+        "sub": "The memorable past memory",
         "date": "11/7/2023",
         "artist": "meal33",
         "timeline": 1,
@@ -1076,7 +1076,7 @@
     {
         "id": 63,
         "title": "Me and Hideki",
-        "sub": "He's my warm and fluffy adopter!",
+        "sub": "The memorable past memory",
         "date": "1/4/2026",
         "artist": "Nokta",
         "timeline": 0,
@@ -1128,7 +1128,7 @@
     {
         "id": 66,
         "title": "The kawaii cherry meow that never grows up!",
-        "sub": "Cherry-ish birthday, with a super big cake!",
+        "sub": "The memorable past memory",
         "date": "4/30/2026",
         "artist": "Nokta",
         "timeline": 0,
@@ -1160,7 +1160,94 @@
             "bday_2026_dorilin.png"
         ],
         "content": "<p>Thank you for your birthday blessings! I won't forget them!</p><p>Credits to these artists (In the order of art being shown)<br></p><ol><li>Izumikawa</li><li>憨天 owo</li><li>赤焰</li><li>毕安<br></li><li>艺空</li><li>Dorilin<br></li></ol>",
-        "link": {},
+        "link": {
+            "forum": ""
+        },
+        "hide": false
+    },
+    {
+        "id": 68,
+        "title": "The cherry meow ice cream...?",
+        "sub": "What does cherry meow taste like?",
+        "date": "5/15/2026",
+        "artist": "Choushi",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "cherry_icecream.jpg"
+        ],
+        "content": "<p>This is Rocky, it's so hot these days that they transformed themsselves into a huge ice cream using the cherry magic.</p><p>Now say it: \"Thanks Rocky\"</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-55094-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 69,
+        "title": "Children's meal!\uD83E\uDE77",
+        "sub": "What does cherry meow taste like?",
+        "date": "6/6/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "children_meal.png"
+        ],
+        "content": "<p>Sometimes you can see some restaurant providing children's meal. Some of them are delicious, some of them are cute and delicious, just like what I'm eating now!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-55230-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 70,
+        "title": "Leche 🍼",
+        "sub": "I'm just a little cherry kitty now...",
+        "date": "6/28/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_le_gusta_leche.png"
+        ],
+        "content": "<p>As I became more and more babyish, I started loving to drink using a baby bottle, and preferring milk powder more and more..</p><p>I started loving sleeping on a crib, and enjoying my babyish new life more and more...</p><p>Now I only wish someone could babysit me 🩷</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-55590-1-1.html"
+        },
+        "hide": false
+    },
+    {
+        "id": 71,
+        "title": "Something about my clothes...",
+        "sub": "It feels that I am intended to wear such kawaii clothes",
+        "date": "7/12/2026",
+        "artist": "breezecat",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "rocki_jojifuku_beginning_1.jpg",
+            "rocki_jojifuku_beginning_2.jpg"
+        ],
+        "content": "<p>Actually, the kawaii clothes I love to wear is not something bought, it's something that's just there when I first arrive at the place where the magic cherry told me to live, and it is the cherry making me started to love these girlish stuff...</p><p>But that's a long story, it'll be one of the story you'll find in this site in the future.</p>",
+        "link": {
+        },
+        "hide": false
+    },
+    {
+        "id": 72,
+        "title": "4 years of the cherry meow!",
+        "sub": "Thanks everyone!",
+        "date": "7/26/2026",
+        "artist": "Nokta",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "4_years_of_rocki.png"
+        ],
+        "content": "<p>This time, it's a pajama party with my best friends in the kindergarten! We had fun until we got really sleepy...</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-55590-1-1.html"
+        },
         "hide": false
     }
 ]
