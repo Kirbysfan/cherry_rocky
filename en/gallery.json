@@ -1249,5 +1249,22 @@
             "forum": "https://dnaxcattalk.dnaxcat.net/thread-55590-1-1.html"
         },
         "hide": false
+    },
+    {
+        "id": 73,
+        "title": "Gifts from Rubut",
+        "sub": "Thanks you!",
+        "date": "7/26/2026",
+        "artist": "Rubut芷榴",
+        "timeline": 0,
+        "vanilla": 0,
+        "src": [
+            "4_years_of_rocki_by_rubut.jpg"
+        ],
+        "content": "<p>This is a 4 year anniversary gift from Rubut, thank you!</p>",
+        "link": {
+            "forum": "https://dnaxcattalk.dnaxcat.net/thread-55592-1-1.html"
+        },
+        "hide": false
     }
 ]

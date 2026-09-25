@@ -26,5 +26,12 @@
         "route": "/fun_stuffs/patpat/index.html",
         "sub": "Please pat with care",
         "is2022": ""
+    },
+    {
+        "id": 5,
+        "title": "I and the Mysterious Potion!",
+        "route": "/fun_stuffs/halloween2026/index.html",
+        "sub": "Trick or Treat!",
+        "is2022": ""
     }
 ]

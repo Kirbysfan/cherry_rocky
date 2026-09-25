@@ -1,5 +1,5 @@
-import { _ as _export_sfc, k as watch, l as createBlock, w as withCtx, u as useRoute, m as useRouter, r as resolveComponent, p as resolveDirective, o as openBlock, b as createBaseVNode, n as normalizeClass, t as toDisplayString, j as withDirectives, c as createElementBlock, a as createVNode, F as Fragment, h as renderList, d as createTextVNode, i as createCommentVNode, q as vModelText, e as _imports_2 } from "./index-B_ONfjOx.js";
-import { _ as _imports_0 } from "./404-BzfYrOTr.js";
+import { _ as _export_sfc, k as watch, l as createBlock, w as withCtx, u as useRoute, m as useRouter, r as resolveComponent, p as resolveDirective, o as openBlock, b as createBaseVNode, n as normalizeClass, t as toDisplayString, j as withDirectives, c as createElementBlock, a as createVNode, F as Fragment, h as renderList, d as createTextVNode, i as createCommentVNode, f as createStaticVNode, e as _imports_2 } from "./index-T27XikEi.js";
+import { _ as _imports_0, a as _imports_1 } from "./stub_p-CLMac4Sb.js";
 const _sfc_main$1 = {
   name: "Gallery-detail",
   props: {},
@@ -14,15 +14,15 @@ const _sfc_main$1 = {
     return { router, route };
   },
   watch: {
-    // 'route.path': {
-    //   handler(newId, oldId) {
-    //     console.log(newId)
-    //     if (newId == '/gallery-detail') {
-    //       this.startQuery()
-    //     }
-    //   },
-    //   immediate: true
-    // }
+    "route.path": {
+      handler(newId, oldId) {
+        console.log(newId);
+        if (newId == "/gallery-detail") {
+          this.startQuery();
+        }
+      },
+      immediate: true
+    }
   },
   data() {
     return {
@@ -74,6 +74,7 @@ const _sfc_main$1 = {
     },
     closeModal() {
       this.show_modal = false;
+      this.router.push("/gallery-list");
     },
     copyToCipboard() {
       let info = "http://cherryrocky.fun/gallery-detail?id=" + this.id;
@@ -83,10 +84,6 @@ const _sfc_main$1 = {
   },
   created() {
     this.lockScroll = this.detectMobile();
-    this.emitter.on("acceptSearchResult", (data) => {
-      this.id = data;
-      this.getPhoto();
-    });
   }
 };
 const _hoisted_1$1 = { class: "gallery-detail" };
@@ -251,9 +248,14 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }, 8, ["before-close", "lock-scroll", "model-value"]);
 }
-const gallery_dialog = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-3b9ae52b"]]);
+const gallery_dialog = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-8c3e80df"]]);
+const _imports_3 = "" + new URL("../gallery/thumbs/rocki_formal.jpg", import.meta.url).href;
 const _sfc_main = {
-  components: { gallery_dialog },
+  name: "Gallery-layout",
+  props: {},
+  components: {
+    gallery_dialog
+  },
   setup() {
     const router = useRouter();
     const route = useRoute();
@@ -270,11 +272,11 @@ const _sfc_main = {
         page: 1,
         pageNum: 12
       },
-      count: 0,
-      keyword: "",
-      d_keyword: "",
-      gallery: [],
       lang: "en",
+      timeline: 0,
+      gallery: [],
+      shown: [],
+      count: 0,
       resumeMode: false
     };
   },
@@ -289,36 +291,28 @@ const _sfc_main = {
     }
   },
   mounted() {
-    this.resumeMode = sessionStorage.getItem("resume") == "1";
-    let params = new URLSearchParams(window.location.search);
-    this.keyword = params.get("keyword") || "";
-    this.d_keyword = params.get("keyword") || "";
-    if (this.keyword === "") {
-      window.location.href = "/";
-    }
-    this.getGallery();
+    this.hideLoad();
   },
   methods: {
-    initQuery() {
-      this.pagination.page = 1;
+    hideLoad() {
+      console.log("hide");
+      this.emitter.emit("hide_loading", true);
+    },
+    toGallery(item) {
+      this.router.push(`/gallery-detail?id=${item.id}`);
     },
     switchPage(e) {
       console.log(e);
       this.pagination.page = e;
       console.log(this.pagination.page);
     },
-    hideLoad() {
-      console.log("hide");
-      this.emitter.emit("hide_loading", true);
+    changeTimeline(info) {
+      this.timeline = info;
+      this.initQuery();
+      this.getGallery();
     },
-    filterSearch(data, keyword) {
-      data = data.filter(
-        (v) => v.title.indexOf(keyword) >= 0 || v.sub.indexOf(keyword) >= 0 || v.artist.indexOf(keyword) >= 0 || $(v.content).text().indexOf(keyword) >= 0
-      );
-      return data;
-    },
-    toGallery(item) {
-      this.emitter.emit("acceptSearchResult", item.id);
+    initQuery() {
+      this.pagination.page = 1;
     },
     getGallery() {
       $.ajax({
@@ -326,8 +320,7 @@ const _sfc_main = {
         success: (function(res) {
           console.log(res);
           let data = res;
-          data = this.filterSearch(data, this.keyword);
-          data = data.map((v) => ({
+          data = res.map((v) => ({
             id: v.id,
             title: v.title,
             sub: v.sub,
@@ -342,146 +335,142 @@ const _sfc_main = {
             return b.id - a.id;
           });
           console.log(data);
-          this.gallery = data;
+          this.gallery = data.filter((v) => v.timeline === this.timeline);
           this.gallery = this.gallery.filter((v) => v.hide === false);
-          console.log(this.gallery);
+          console.log(data[0]);
+          console.log(data[0].hide);
           this.count = this.gallery.length;
-          this.hideLoad();
         }).bind(this)
       });
     }
+  },
+  created() {
+    this.resumeMode = sessionStorage.getItem("resume") == "1";
+    this.getGallery();
   }
 };
-const _hoisted_1 = { class: "main container-fluid text-white p-4" };
-const _hoisted_2 = { class: "row justify-content-center" };
-const _hoisted_3 = { class: "col-12 col-md-10 col-lg-8" };
-const _hoisted_4 = { class: "search-sect" };
+const _hoisted_1 = { class: "gallery-layout" };
+const _hoisted_2 = { class: "main container-fluid text-white p-4" };
+const _hoisted_3 = { class: "row justify-content-center" };
+const _hoisted_4 = { class: "col-12 col-md-10 col-lg-8" };
 const _hoisted_5 = {
-  action: "/search",
-  class: "search_inner"
-};
-const _hoisted_6 = {
   key: 0,
-  class: "gallery row row-cols-xxl-4 row-cols-lg-3 row-cols-sm-2"
+  hidden: "hidden",
+  class: "card p-0",
+  "data-bs-theme": "dark"
 };
-const _hoisted_7 = ["onClick"];
-const _hoisted_8 = ["title"];
-const _hoisted_9 = { class: "col-12 mb-2 p-0 thumb-outer" };
-const _hoisted_10 = ["src"];
-const _hoisted_11 = { class: "col-10" };
-const _hoisted_12 = ["innerHTML"];
-const _hoisted_13 = ["innerHTML"];
-const _hoisted_14 = { class: "d-md-flex justify-content-between small flex-nowrap overflow-hidden" };
-const _hoisted_15 = { class: "text-truncate text-nowrap overflow-hidden" };
-const _hoisted_16 = { class: "flex-shrink-0 overflow-hidden" };
-const _hoisted_17 = {
-  key: 0,
-  class: "d-flex justify-content-center pagination mt-4"
-};
-const _hoisted_18 = {
-  key: 1,
-  class: "empty"
-};
+const _hoisted_6 = { class: "formal_sona_sect mt-2" };
+const _hoisted_7 = { class: "gallery-switch" };
+const _hoisted_8 = { class: "gallery row row-cols-xxl-4 row-cols-lg-3 row-cols-sm-2" };
+const _hoisted_9 = ["onClick"];
+const _hoisted_10 = ["title"];
+const _hoisted_11 = { class: "col-12 mb-2 p-0 thumb-outer" };
+const _hoisted_12 = ["src"];
+const _hoisted_13 = { class: "col-10" };
+const _hoisted_14 = ["innerHTML"];
+const _hoisted_15 = ["innerHTML"];
+const _hoisted_16 = { class: "d-md-flex justify-content-between small flex-nowrap overflow-hidden" };
+const _hoisted_17 = { class: "text-truncate text-nowrap overflow-hidden" };
+const _hoisted_18 = { class: "flex-shrink-0 overflow-hidden" };
+const _hoisted_19 = { class: "d-flex justify-content-center pagination mt-4" };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_router_view = resolveComponent("router-view");
   const _component_el_pagination = resolveComponent("el-pagination");
   const _component_gallery_dialog = resolveComponent("gallery_dialog");
   return openBlock(), createElementBlock("div", _hoisted_1, [
+    createVNode(_component_router_view),
+    _cache[7] || (_cache[7] = createStaticVNode('<div class="banner" data-v-ab6e17ce><img class="d-none d-md-block position-relative banner_stub" src="' + _imports_0 + '" alt="" data-v-ab6e17ce><img class="d-block d-md-none position-relative banner_stub_mobile" src="' + _imports_1 + '" alt="" data-v-ab6e17ce><div class="banner_text" data-v-ab6e17ce><div data-v-ab6e17ce><div class="banner_h1" data-v-ab6e17ce><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-ab6e17ce><h1 class="mx-2" data-v-ab6e17ce>Gallery</h1><img class="banner_hoshi" src="' + _imports_2 + '" alt="" draggable="false" data-v-ab6e17ce></div><p data-v-ab6e17ce>My memory in Yah-Den Mainland!</p></div></div></div>', 1)),
     createBaseVNode("div", _hoisted_2, [
       createBaseVNode("div", _hoisted_3, [
         createBaseVNode("div", _hoisted_4, [
-          createBaseVNode("form", _hoisted_5, [
-            withDirectives(createBaseVNode("input", {
-              id: "keyword",
-              "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.keyword = $event),
-              name: "keyword",
-              type: "text",
-              placeholder: "What are you looking for?",
-              "placehplder-class": "ph"
-            }, null, 512), [
-              [vModelText, $data.keyword]
-            ]),
-            _cache[1] || (_cache[1] = createBaseVNode("button", { type: "submit" }, [
-              createBaseVNode("span", { class: "material-symbols-outlined" }, " search ")
-            ], -1))
-          ])
-        ]),
-        createBaseVNode("h2", null, 'Search result of "' + toDisplayString($data.d_keyword) + '": ' + toDisplayString($data.count) + " entries", 1),
-        $data.count > 0 ? (openBlock(), createElementBlock("div", _hoisted_6, [
-          (openBlock(true), createElementBlock(Fragment, null, renderList($options.pagedList, (item, index) => {
-            return openBlock(), createElementBlock("div", {
-              class: "p-1",
-              key: index,
-              onClick: ($event) => $options.toGallery(item)
-            }, [
-              createBaseVNode("div", {
-                class: normalizeClass(["row align-items-center gallery-item pb-2 mx-1 my-1", item.vanilla == 1 ? "vanilla-item" : ""]),
-                title: `${item.title}
-${item.sub}`
+          !$data.resumeMode ? (openBlock(), createElementBlock("div", _hoisted_5, _cache[3] || (_cache[3] = [
+            createStaticVNode('<div class="card-header bg-warning d-flex align-items-center text-dark" data-v-ab6e17ce><span class="material-symbols-outlined" style="font-size:24px !important;" data-v-ab6e17ce> warning </span>   Something is missing? </div><div class="card-body" data-v-ab6e17ce><h4 class="card-title" data-v-ab6e17ce>This is expected, no worries.</h4><p class="card-text" data-v-ab6e17ce> Because of something that shouldn&#39;t happen is happening in the earth, some of the contents that used to be there is no longer suitable to be shown to those angry earthlings.<br data-v-ab6e17ce> They are now removed temporarily for safety reason, you cannot access them by using URL params too. </p></div><div class="card-footer text-muted" data-v-ab6e17ce> Tribun: I wish that mad lady can stop creating chaos as soon as possible, cannot understand why so many earthlings wish things become even worse... </div>', 3)
+          ]))) : createCommentVNode("", true),
+          createBaseVNode("div", _hoisted_6, [
+            createBaseVNode("div", {
+              onClick: _cache[0] || (_cache[0] = ($event) => $options.toGallery({ id: 41 })),
+              class: "formal_sona_sect_inner d-flex align-items-stretch"
+            }, _cache[4] || (_cache[4] = [
+              createStaticVNode('<div class="overflow-hidden thumb-outer flex-shrink-0" data-v-ab6e17ce><img class="thumb" src="' + _imports_3 + '" alt="" data-v-ab6e17ce></div><div class="p-4" data-v-ab6e17ce><h3 class="m-0" data-v-ab6e17ce>The formal design of DNAxCAT Rocky the cherry meow!🍒</h3><p class="mb-2" data-v-ab6e17ce> From now on DNAxCAT Rocky will be the representative of cherry that is all about SUPER kawaii and childish stuffs! </p><h5 data-v-ab6e17ce>Click HERE to check the formal sona info!</h5></div>', 2)
+            ]))
+          ]),
+          createBaseVNode("div", _hoisted_7, [
+            createBaseVNode("div", {
+              class: normalizeClass(["switch-item", $data.timeline == 0 ? "active" : ""]),
+              onClick: _cache[1] || (_cache[1] = ($event) => $options.changeTimeline(0))
+            }, " New timeline ", 2),
+            createBaseVNode("div", {
+              class: normalizeClass(["switch-item", $data.timeline == 1 ? "active" : ""]),
+              onClick: _cache[2] || (_cache[2] = ($event) => $options.changeTimeline(1))
+            }, " The forgotten timeline ", 2)
+          ]),
+          createBaseVNode("div", _hoisted_8, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList($options.pagedList, (item, index) => {
+              return openBlock(), createElementBlock("div", {
+                class: "p-1",
+                key: index,
+                onClick: ($event) => $options.toGallery(item)
               }, [
-                createBaseVNode("div", _hoisted_9, [
-                  createBaseVNode("img", {
-                    class: "thumb",
-                    loading: "lazy",
-                    src: `/gallery/thumbs/${item.src[0]}`,
-                    alt: ""
-                  }, null, 8, _hoisted_10)
-                ]),
-                _cache[3] || (_cache[3] = createBaseVNode("div", { class: "col-2 col-lg-2 flex-shrink-0 d-flex justify-content-center" }, [
-                  createBaseVNode("img", {
-                    src: _imports_2,
-                    alt: "",
-                    draggable: "false",
-                    class: "option_hoshi",
-                    loading: "lazy"
-                  })
-                ], -1)),
-                createBaseVNode("div", _hoisted_11, [
-                  createBaseVNode("h4", {
-                    class: "m-0 text-nowrap text-truncate",
-                    innerHTML: item.title
-                  }, null, 8, _hoisted_12),
-                  createBaseVNode("p", {
-                    class: "m-0 text-nowrap text-truncate",
-                    innerHTML: item.sub
-                  }, null, 8, _hoisted_13),
-                  createBaseVNode("div", _hoisted_14, [
-                    createBaseVNode("div", _hoisted_15, [
-                      _cache[2] || (_cache[2] = createBaseVNode("i", { class: "fa-solid fa-palette" }, null, -1)),
-                      createTextVNode(" " + toDisplayString(item.artist), 1)
-                    ]),
-                    createBaseVNode("div", _hoisted_16, toDisplayString(item.date), 1)
+                createBaseVNode("div", {
+                  class: normalizeClass(["row align-items-center gallery-item pb-2 mx-1 my-1", item.vanilla == 1 ? "vanilla-item" : ""]),
+                  title: `${item.title}
+${item.sub}`
+                }, [
+                  createBaseVNode("div", _hoisted_11, [
+                    createBaseVNode("img", {
+                      class: "thumb",
+                      loading: "lazy",
+                      src: `/gallery/thumbs/${item.src[0]}`,
+                      alt: ""
+                    }, null, 8, _hoisted_12)
+                  ]),
+                  _cache[6] || (_cache[6] = createBaseVNode("div", { class: "col-2 col-lg-2 flex-shrink-0 d-flex justify-content-center" }, [
+                    createBaseVNode("img", {
+                      src: _imports_2,
+                      alt: "",
+                      draggable: "false",
+                      class: "option_hoshi",
+                      loading: "lazy"
+                    })
+                  ], -1)),
+                  createBaseVNode("div", _hoisted_13, [
+                    createBaseVNode("h4", {
+                      class: "m-0 text-nowrap text-truncate",
+                      innerHTML: item.title
+                    }, null, 8, _hoisted_14),
+                    createBaseVNode("p", {
+                      class: "m-0 text-nowrap text-truncate",
+                      innerHTML: item.sub
+                    }, null, 8, _hoisted_15),
+                    createBaseVNode("div", _hoisted_16, [
+                      createBaseVNode("div", _hoisted_17, [
+                        _cache[5] || (_cache[5] = createBaseVNode("i", { class: "fa-solid fa-palette" }, null, -1)),
+                        createTextVNode(" " + toDisplayString(item.artist), 1)
+                      ]),
+                      createBaseVNode("div", _hoisted_18, toDisplayString(item.date), 1)
+                    ])
                   ])
-                ])
-              ], 10, _hoisted_8)
-            ], 8, _hoisted_7);
-          }), 128))
-        ])) : createCommentVNode("", true)
-      ])
-    ]),
-    $data.count > 0 ? (openBlock(), createElementBlock("div", _hoisted_17, [
-      createVNode(_component_el_pagination, {
-        total: $data.count,
-        class: "flex-wrap",
-        "current-page": $data.pagination.page,
-        "page-size": $data.pagination.pageNum,
-        background: true,
-        "onUpdate:currentPage": $options.switchPage
-      }, null, 8, ["total", "current-page", "page-size", "onUpdate:currentPage"])
-    ])) : createCommentVNode("", true),
-    createVNode(_component_gallery_dialog),
-    $data.count === 0 ? (openBlock(), createElementBlock("div", _hoisted_18, _cache[4] || (_cache[4] = [
-      createBaseVNode("div", { class: "img404_outer" }, [
-        createBaseVNode("img", {
-          class: "img404",
-          src: _imports_0,
-          alt: ""
-        })
-      ], -1),
-      createBaseVNode("h2", null, "Nothing was found!", -1)
-    ]))) : createCommentVNode("", true)
+                ], 10, _hoisted_10)
+              ], 8, _hoisted_9);
+            }), 128))
+          ])
+        ])
+      ]),
+      createBaseVNode("div", _hoisted_19, [
+        createVNode(_component_el_pagination, {
+          total: $data.count,
+          class: "flex-wrap",
+          "current-page": $data.pagination.page,
+          "page-size": $data.pagination.pageNum,
+          background: true,
+          "onUpdate:currentPage": $options.switchPage
+        }, null, 8, ["total", "current-page", "page-size", "onUpdate:currentPage"])
+      ]),
+      createVNode(_component_gallery_dialog)
+    ])
   ]);
 }
-const search = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-cbbae287"]]);
+const galleryLayout = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-ab6e17ce"]]);
 export {
-  search as default
+  galleryLayout as default
 };

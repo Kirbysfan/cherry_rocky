@@ -1,4 +1,4 @@
-import { _ as _export_sfc, c as createElementBlock, a as createVNode, w as withCtx, r as resolveComponent, o as openBlock, b as createBaseVNode, d as createTextVNode, g as getDefaultExportFromCjs, e as _imports_2$2, f as createStaticVNode } from "./index-B_ONfjOx.js";
+import { _ as _export_sfc, c as createElementBlock, a as createVNode, w as withCtx, r as resolveComponent, o as openBlock, b as createBaseVNode, d as createTextVNode, g as getDefaultExportFromCjs, e as _imports_2$2, f as createStaticVNode } from "./index-T27XikEi.js";
 const _imports_0$1 = "" + new URL("rocky_logo_2022-Buj3GMDu.webp", import.meta.url).href;
 const _imports_2$1 = "" + new URL("rocky_logo-BrTaHfpz.webp", import.meta.url).href;
 const _imports_2 = "" + new URL("rocki_heart_by_nokta-C5bK9ZLi.png", import.meta.url).href;
@@ -60,7 +60,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
             })) : (openBlock(), createElementBlock("img", _hoisted_3$1))
           ]),
           _cache[2] || (_cache[2] = createBaseVNode("h3", null, "DNAxCAT Rocky's personal website", -1)),
-          _cache[3] || (_cache[3] = createBaseVNode("h4", null, "Milestone 1.4-safe", -1)),
+          _cache[3] || (_cache[3] = createBaseVNode("h4", null, "Milestone 1.4.1-safe", -1)),
           _cache[4] || (_cache[4] = createBaseVNode("h4", null, "Created & designed by Kirbysfan, 2022-2026 Kirbysfan", -1)),
           _cache[5] || (_cache[5] = createBaseVNode("h4", null, "Powered by:", -1)),
           _cache[6] || (_cache[6] = createBaseVNode("p", null, [
@@ -147,7 +147,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     }, 8, ["modelValue"])
   ]);
 }
-const About_popover = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-d898b7a8"]]);
+const About_popover = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-c7601418"]]);
 var bootstrap_bundle_min$1 = { exports: {} };
 /*!
   * Bootstrap v5.3.5 (https://getbootstrap.com/)
